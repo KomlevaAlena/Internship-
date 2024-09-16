@@ -1,8 +1,10 @@
 // Vendor
-// ---------------------------------
-
 @import "vendor/normalize";
-
 
 // Global
 @import "global/fonts/fonts";
+@import "mixins";
+@import "variables";
+@import "global/utils";
+@import "global/reboot";
+@import "global/container";
