@@ -83,7 +83,11 @@
                     </svg>
                   </a>
                 </div>
-                <picture></picture>
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/hero-program-1x.webp 1x, img/hero-program-2x.webp 2x" width="1440" height="800" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/hero-program-tablet-1x.webp 1x, img/hero-program-tablet-2x.webp 2x" width="768" height="1024" type="image/webp">
+                  <img src="img/hero-program-mobile-1x.webp" srcset="img/hero-program-mobile-2x.webp" width="320" height="568" alt="Команда за работой.">
+                </picture>
               </li>
               <li class="hero-list__item hero-card swiper-slide">
                 <div class="hero-card__wrapper"></div>
@@ -96,7 +100,11 @@
                     </svg>
                   </a>
                 </div>
-                <picture></picture>
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/hero-volunteer-1x.webp 1x, img/hero-volunteer-2x.webp 2x" width="1440" height="800" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/hero-volunteer-tablet-1x.webp 1x, img/hero-volunteer-tablet-2x.webp 2x" width="768" height="1024" type="image/webp">
+                  <img src="img/hero-volunteer-mobile-1x.webp" srcset="img/hero-volunteer-mobile-2x.webp" width="320" height="568" alt="Группа волонтеров.">
+                </picture>
               </li>
               <li class="hero-list__item hero-card swiper-slide">
                 <div class="hero-card__wrapper"></div>
@@ -109,7 +117,11 @@
                     </svg>
                   </a>
                 </div>
-                <picture></picture>
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/hero-global-1x.webp 1x, img/hero-global-2x.webp 2x" width="1440" height="800" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/hero-global-tablet-1x.webp 1x, img/hero-global-tablet-2x.webp 2x" width="768" height="1024" type="image/webp">
+                  <img src="img/hero-global-mobile-1x.webp" srcset="img/hero-global-mobile-2x.webp" width="320" height="568" alt="Девушка с книгами.">
+                </picture>
               </li>
             </ol>
             <ol class="hero-list hero-pagination swiper-pagination"></ol>
@@ -119,6 +131,19 @@
             </ol>
           </div>
         </div>
+      </section>
+      <section class="about" data-test="about">
+        <div class="about__wrapper container">
+          <h2 class="about__title title">О проекте «Стажировка»</h2>
+          <p class="about__text">«Стажировка» — совместный проект правительств и волонтёрских бригад.</p>
+          <h3 class="about__title title">Наша цель</h3>
+          <p class="about-description">Наша деятельность направлена на повышение квалификации молодых специалистов на ранних и средних стадиях карьеры, предоставляя им инструменты для решения сложныхпроблем, с которыми сталкиваются в мире. Цель центра — наделить этих людей способностью инициировать значимые изменения.</p>
+          <a class="about-button button" href="#">
+            <span>подробнее о проекте</span>
+            <svg>
+              <use href="/__spritemap#sprite-user"></use>
+            </svg>
+          </a>
       </section>
     </div>
     <!-- пример использования спрайта >
