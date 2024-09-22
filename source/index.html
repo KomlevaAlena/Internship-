@@ -557,6 +557,35 @@
               </button>
           </div>
       </section>
+      <section class="contacts">
+        <h2 class="contacts__title title">Контакты</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item contacts-card">
+                <h3 class="contacts-card__title">центральный офис</h3>
+                <p class="contacts-card__description">г. Новосибирск, ул. Щетинкина 68, культурный центр</p>
+              </li>
+              <li class="contacts__item contacts-card">
+                <h3 class="contacts-card__title">Телефон</h3>
+                <p class="contacts-card__description contacts-card__tel" href="tel:+7-963-876-876-76">+7 963 876 876 76</p>
+              </li>
+              <li class="contacts__item contacts-card"></li>
+                <h3 class="contacts-card__title">Email</h3>
+                <p class="contacts-card__description contacts-card__email" href="mailto:Info@stazh.ru">Info@stazh.ru</p>
+              </li>
+            </ul>
+            <div class="contacts__map map">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/map-1x.webp 1x, img/map-2x.webp 2x" width="1240" height="486" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/map-tablet-1x.webp 1x, img/map-tablet-2x.webp 2x" width="678" height="500" type="image/webp">
+                <img src="img/map-mobile-1x.webp" srcset="img/map-mobile-2x.webp" width="290" height="240" alt="Мы на карте">
+              </picture>
+              <div class="contacts__map-icon">
+                <svg role="img"  viewBox="0 0 22 22" width="22" height="22" focusable="false">
+                  <use href="/__spritemap#sprite-pin-filled"></use>
+                </svg>
+              </div>
+            </div>
+      </section>
     </div>
     <!-- пример использования спрайта >
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
