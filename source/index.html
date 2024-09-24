@@ -24,7 +24,13 @@
         <div class="container">
           <h1 class="visually-hidden">Internship: Обучение за рубежом.</h1>
           <nav class="main-nav">
-            <div class="main-nav__logo"></div>
+            <div class="main-nav__logo">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logotype-Internship-icon.webp 1x, img/logotype-Internship-icon-2x.webp 2x" width="30" height="30" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/logotype-Internship-icon.webp 1x, img/logotype-Internship-icon-2x.webp 2x" width="30" height="30" type="image/webp">
+                <img src="img/logotype-Internship-icon.webp" srcset="img/logotype-Internship-icon-2x.webp" width="30" height="30" alt="Мы на карте">
+              </picture>
+            </div>
             <div class="main-nav__menu main-menu">
               <ul class="main-list main-list__nojs">
                 <li class="main-item">
@@ -562,7 +568,8 @@
         </div>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title title">Контакты</h2>
+        <div class="contacts__wrapper container">
+          <h2 class="contacts__title title">Контакты</h2>
             <ul class="contacts__list">
               <li class="contacts__item contacts-card">
                 <h3 class="contacts-card__title">центральный офис</h3>
@@ -589,63 +596,66 @@
                 </svg>
               </div>
             </div>
+        </div>
       </section>
       <section class="feedback" data-test="form">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/form-city-1x.webp 1x, img/form-city-2x.webp 2x" width="1240" height="800" type="image/webp">
-          <source media="(min-width: 768px)" srcset="img/form-city-tablet-1x.webp 1x, img/form-city-tablet-2x.webp 2x" width="652" height="780" type="image/webp">
-          <img src="img/form-city-mobile-1x.webp" srcset="img/form-city-mobile-2x.webp" width="320" height="753" alt="Город">
-        </picture>
-        <div class="feedback__wrapper">
-          <h2 class="feedback__title title">Напишите нам</h2>
-          <p class="feedback__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
-          <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="form__group" data-validate-type="text" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
-              <label class="visually-hidden" for="name">Имя</label>
-              <input type="text" name="user-name-1" id="name" placeholder="">
-            </div>
-            <div class="form__group" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required data-phone-length="18">
-              <label class="visually-hidden" for="phone">Телефон</label>
-              <input type="text" name="user-phone" id="phone" placeholder="">
-            </div>
-            <div class="form__group" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required data-phone-length="18">
-              <label class="visually-hidden" for="message">Ваше сообщение</label>
-              <textarea name="message" id="message" placeholder=""></textarea>
-            </div>
-            <div class="form__group">
-              <h3 class="form__select--title title">Выберите город</h3>
-              <select class="form__select--wrapper form__select" aria-label="Выберите город">
-                <option value="default" class="form__select__text">Санкт-Петербург</option>
-                <option value="popular" class="form__select__text">Новосибирск</option>
-                <option value="expensive" class="form__select__text">Москва</option>
-                <option value="expensive" class="form__select__text">Омск</option>
-                <option value="expensive" class="form__select__text">Екатеринбург</option>
-                <option value="expensive" class="form__select__text">Владивосток</option>
-              </select>
-            </div>
-            <fieldset class="form__checkbox checkbox">
-              <ul class="checkbox__list">
-                <li>
-                  <label class="checkbox__control">
-                    <input class="checkbox__input visually-hidden" type="checkbox" value="Я согласен на обработку персональных данных">
-                    <span class="checkbox__mark"></span>
-                    <span class="checkbox__label">Я согласен на обработку персональных данных</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="free__button form__button button" type="submit">
-              <span class="visually-hidden">отправить</span>
-                <svg role="img"  viewBox="0 0 18 34" width="18" height="34" focusable="false">
-                  <use href="/__spritemap#sprite-next-arrow"></use>
-                </svg>
-            </button>
-          </form>
+        <div class="feedback__wrapper container">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/form-city-1x.webp 1x, img/form-city-2x.webp 2x" width="1240" height="800" type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/form-city-tablet-1x.webp 1x, img/form-city-tablet-2x.webp 2x" width="652" height="780" type="image/webp">
+            <img src="img/form-city-mobile-1x.webp" srcset="img/form-city-mobile-2x.webp" width="320" height="753" alt="Город">
+          </picture>
+          <div class="feedback__wrapper container">
+            <h2 class="feedback__title title">Напишите нам</h2>
+            <p class="feedback__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+            <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="form__group" data-validate-type="text" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                <label class="visually-hidden" for="name">Имя</label>
+                <input type="text" name="user-name-1" id="name" placeholder="">
+              </div>
+              <div class="form__group" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required data-phone-length="18">
+                <label class="visually-hidden" for="phone">Телефон</label>
+                <input type="text" name="user-phone" id="phone" placeholder="">
+              </div>
+              <div class="form__group" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required data-phone-length="18">
+                <label class="visually-hidden" for="message">Ваше сообщение</label>
+                <textarea name="message" id="message" placeholder=""></textarea>
+              </div>
+              <div class="form__group">
+                <h3 class="form__select--title title">Выберите город</h3>
+                <select class="form__select--wrapper form__select" aria-label="Выберите город">
+                  <option value="default" class="form__select__text">Санкт-Петербург</option>
+                  <option value="popular" class="form__select__text">Новосибирск</option>
+                  <option value="expensive" class="form__select__text">Москва</option>
+                  <option value="expensive" class="form__select__text">Омск</option>
+                  <option value="expensive" class="form__select__text">Екатеринбург</option>
+                  <option value="expensive" class="form__select__text">Владивосток</option>
+                </select>
+              </div>
+              <fieldset class="form__checkbox checkbox">
+                <ul class="checkbox__list">
+                  <li>
+                    <label class="checkbox__control">
+                      <input class="checkbox__input visually-hidden" type="checkbox" value="Я согласен на обработку персональных данных">
+                      <span class="checkbox__mark"></span>
+                      <span class="checkbox__label">Я согласен на обработку персональных данных</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="free__button form__button button" type="submit">
+                <span class="visually-hidden">отправить</span>
+                  <svg role="img"  viewBox="0 0 18 34" width="18" height="34" focusable="false">
+                    <use href="/__spritemap#sprite-next-arrow"></use>
+                  </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
       <footer class="footer" data-test="footer">
-        <div class="container footer__container">
+        <div class="footer__container container">
           <div class="footer__logo">
             <span class="visually-hidden">Internship: Обучение за рубежом.</span>
             <svg role="img"  viewBox="0 0 106 19" width="106" height="19" focusable="false">
@@ -702,7 +712,7 @@
           <p class="footer__confidential">Политика конфиденциальности</p>
         </div>
       </footer>
-      <div class="modal modal-form">
+      <div class="modal modal-form container">
         <div class="modal-form__wrapper">
           <h2 class="modal-form__title">Что-то пошло не так!</h2>
           <p class="modal-form__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
