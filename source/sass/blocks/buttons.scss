@@ -1,0 +1,42 @@
+.toggle {
+  display: block;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: $color-default-white;
+  color: $color-blue;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    color: $color-default-white;
+    background-color: $color-blue;
+    outline: none;
+    border: 1px solid transparent;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-default-white;
+    background-color: $color-blue;
+    outline: none;
+    border: 1px solid transparent;
+  }
+
+  &:active {
+    color: rgba(49, 109, 194, 0.7);
+    background-color: $color-blue;
+    outline: none;
+    border: 1px solid transparent;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: $color-disabled;
+    outline: none;
+    border: 1px solid transparent;
+  }
+}
