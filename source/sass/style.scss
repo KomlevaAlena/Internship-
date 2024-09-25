@@ -1,5 +1,6 @@
 // Vendor
 @import "vendor/normalize";
+@import "vendor/data-accordion";
 
 // Global
 @import "global/fonts/fonts";
@@ -10,7 +11,9 @@
 @import "global/container";
 
 // Blocks
+@import "blocks/accordion";
 @import "blocks/buttons";
+@import "blocks/link";
 @import "blocks/main-header";
 @import "blocks/main-nav";
 @import "blocks/main-menu";

@@ -22,11 +22,11 @@
     color: $color-default-white;
     background-color: $color-blue;
     outline: none;
-    border: 1px solid transparent;
+    border: 1px solid rgba(255, 255, 255, 0.01);
   }
 
   &:active {
-    color: rgba(49, 109, 194, 0.7);
+    color: rgba(255, 255, 255, 0.7);
     background-color: $color-blue;
     outline: none;
     border: 1px solid transparent;
@@ -38,5 +38,38 @@
     background-color: $color-disabled;
     outline: none;
     border: 1px solid transparent;
+  }
+}
+
+.button--menu {
+  display: block;
+  padding: 0;
+  border: none;
+  background-color: $color-blue;
+  color: $color-default-white;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus,
+  &:focus-visible {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    opacity: 0.1;
+    color: $color-disabled;
   }
 }

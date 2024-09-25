@@ -6,6 +6,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {sliderHero} from './modules/slider';
+import {initAccordions} from './modules/accordion/init-accordion';
 // import {sliderTours} from './modules/slider';
 // import {sliderTraining} from './modules/slider';
 // import {sliderReviews} from './modules/slider';
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     // mobileMenu();
+    initAccordions();
     sliderHero.init();
     // sliderTours.init();
     // sliderTraining.init();

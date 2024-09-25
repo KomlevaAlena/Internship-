@@ -32,43 +32,77 @@
               </picture>
             </div>
             <div class="main-nav__menu">
-              <ul class="main-nav__list main-list__nojs">
+              <ul class="main-nav__list main-list__nojs accordion" data-accordion="parent" data-single>
                 <li class="main-nav__item">
                   <h2 class="main-nav__title">меню</h2>
-                  <button class="main-nav__toggle toggle button main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть меню.</span></button>
-                  <button class="main-nav__toggle toggle button main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню.</span></button>
+                  <button class="main-nav__toggle toggle button main-nav__toggle--open" type="button">
+                    <span class="visually-hidden">Открыть меню.</span>
+                    <svg>
+                      <use href="/__spritemap#sprite-burger"></use>
+                    </svg>
+                  </button>
+                  <button class="main-nav__toggle toggle button main-nav__toggle--close" type="button">
+                    <span class="visually-hidden">Закрыть меню.</span>
+                    <svg>
+                      <use href="/__spritemap#sprite-cross"></use>
+                    </svg>
+                  </button>
                 </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link link" href="#">О проекте</a>
+                <li class="main-nav__item item-start">
+                  <a class="main-nav__link link--menu" href="#">О проекте</a>
                 </li>
-                <li class="main-nav__item">
-                  <span class="main-nav__title">Программы</span>
-                  <button class="main-nav__button"><span class="visually-hidden">Открыть пункт меню.</span></button>
-                  <ul class="main-nav__sublist main-sublist">
-                    <li class="main-sublist__item"><a class="main-sublist__link" href="#">Стажировки</a></li>
-                    <li class="main-sublist__item"><a class="main-sublist__link" href="#">Волонтёрство</a></li>
-                    <li class="main-sublist__item"><a class="main-sublist__link" href="#">Учеба</a></li>
-                    <li class="main-sublist__item"><a class="main-sublist__link" href="#">Религия</a></li>
+                <li class="main-nav__item accordion__element is-active" data-accordion="element">
+                  <button class="main-nav__button button--menu accordion__button" data-tabs="control" type="button">
+                    <span class="main-nav__title">Программы</span>
+                    <svg>
+                      <use href="/__spritemap#sprite-arrow-down"></use>
+                    </svg>
+                  </button>
+                  <ul class="main-nav__sublist main-sublist accordion__content" data-accordion="content">
+                    <li class="main-sublist__item">
+                      <a class="main-sublist__link link--menu" href="#">Стажировки</a>
+                    </li>
+                    <li class="main-sublist__item">
+                      <a class="main-sublist__link link--menu" href="#">Волонтёрство</a>
+                    </li>
+                    <li class="main-sublist__item">
+                      <a class="main-sublist__link link--menu" href="#">Учеба</a>
+                    </li>
+                    <li class="main-sublist__item">
+                      <a class="main-sublist__link link--menu" href="#">Религия</a>
+                    </li>
                   </ul>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link link" href="#">как поехать</a>
+                  <a class="main-nav__link link--menu" href="#">как поехать</a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link link" href="#">отзывы</a>
+                  <a class="main-nav__link link--menu" href="#">отзывы</a>
                 </li>
-                <li class="main-nav__item">
-                  <span class="main-nav__item__title">новости</span>
-                  <button class="main-nav__button"><span class="visually-hidden">Открыть пункт меню.</span></button>
-                  <ul class="main-nav__sublist main-sublist">
-                    <li class="main-sublist__item"><a class="main-sublist__link" href="#">Стажировки</a></li>
-                    <li class="main-sublist__item"><a class="main-sublist__link" href="#">Волонтёрство</a></li>
-                    <li class="main-sublist__item"><a class="main-sublist__link" href="#">Учеба</a></li>
-                    <li class="main-sublist__item"><a class="main-sublist__link" href="#">Религия</a></li>
+                <li class="main-nav__item accordion__element" data-accordion="element">
+                  <button class="main-nav__button button--menu accordion__button" data-tabs="control" type="button">
+                    <span class="main-nav__title">новости</span>
+                    <svg>
+                      <use href="/__spritemap#sprite-arrow-down"></use>
+                    </svg>
+                  </button>
+                  <ul class="main-nav__sublist main-sublist accordion__content" data-accordion="content">
+                    <li class="main-sublist__item">
+                      <a class="main-sublist__link link--menu" href="#">Стажировки</a>
+                    </li>
+                    <li class="main-sublist__item">
+                      <a class="main-sublist__link link--menu" href="#">Волонтёрство</a>
+                    </li>
+                    <li class="main-sublist__item">
+                      <a class="main-sublist__link link--menu" href="#">Учеба</a>
+                    </li>
+                    <li class="main-sublist__item">
+                      <a class="main-sublist__link link--menu" href="#">Религия</a>
+                    </li>
                   </ul>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link link" href="#">контакты</a>
+                  <a class="main-nav__link link--menu" href="#">контакты</a>
                 </li>
               </ul>
             </div>
@@ -405,7 +439,7 @@
         <div class="container">
           <h2 class="faq__title title">Вопросы и ответы</h2>
           <ul class="faq__accordion-list accordion" data-tabs="element" data-accordion="parent">
-            <li class="faq__item accordion__item">
+            <li class="faq__item accordion-item">
               <div class="accordion__element is-active" data-accordion="element">
                 <div class="accordion__button-wrapper">
                   <h3 class="accordion__title">Кто организатор? Какие сроки у программы?</h3>

@@ -28,8 +28,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-radius: 25px;
-    margin-bottom: 4px;
+    border-radius: 30px;
+    margin-bottom: 3px;
+    border: 1px solid transparent;
+  }
+
+  &:last-of-type {
+    border-radius: 0 0 30px 30px;
+    padding: 0 0 21px 0;
   }
 }
 
@@ -47,5 +53,103 @@
 }
 
 .main-nav__toggle {
-  margin: 4px auto 4px 4px;
+  margin: 3px 3px 3px 3px;
+}
+
+.main-nav__toggle--open {
+  background-color: $color-default-white;
+  color: $color-blue;
+  position: relative;
+
+  svg {
+    display: block;
+    position: absolute;
+    content: "";
+    color: currentColor;
+    width: 22px;
+    height: 12px;
+    top: 16px;
+    left: 12px;
+  }
+}
+
+.main-nav__toggle--close {
+  background-color: $color-blue;
+  color: $color-default-white;
+  position: relative;
+
+  svg {
+    display: block;
+    position: absolute;
+    content: "";
+    color: currentColor;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    left: 12px;
+  }
+
+  &:hover {
+    color: $color-blue;
+    background-color: $color-default-white;
+    outline: none;
+    border: 1px solid transparent;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-blue;
+    background-color: $color-default-white;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.01);
+  }
+
+  &:active {
+    color: rgba(49, 109, 194, 0.7);
+    background-color: $color-default-white;
+    outline: none;
+    border: 1px solid transparent;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: $color-disabled;
+    outline: none;
+    border: 1px solid transparent;
+  }
+}
+
+.item-start {
+  display: block;
+  border-radius: 30px 30px 0 0;
+  padding: 21px 0 3px 0;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 14px 25px;
+  text-transform: uppercase;
+  font-family: $font-manrope;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.15px;
+  color: $color-default-white;
+}
+
+.main-nav__button {
+  display: block;
+  position: relative;
+
+  svg {
+    display: block;
+    position: absolute;
+    content: "";
+    color: currentColor;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    left: 12px;
+  }
 }
