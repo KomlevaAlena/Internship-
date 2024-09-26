@@ -253,10 +253,10 @@
               <div class="programs-card__wrapper">
                 <h2 class="programs-card__title title">Стажировки</h2>
                 <p class="programs-card__text">Получите незаменимый  опыт работы в крупнейших  мировых компаниях.</p>
-                <a class="programs-card__button button" href="#">
+                <a class="programs-card__button toggle" href="#">
                   <span class="visually-hidden">Подробнее</span>
                   <svg>
-                    <use href="/__spritemap#sprite-user"></use>
+                    <use href="/__spritemap#sprite--arrow-button-rigth"></use>
                   </svg>
                 </a>
               </div>
@@ -270,10 +270,10 @@
               <div class="programs-card__wrapper">
                 <h2 class="programs-card__title title">Волонтёрство</h2>
                 <p class="programs-card__text">Помогайте другим и развивайте свои лидерские качества.</p>
-                <a class="programs-card__button button" href="#">
+                <a class="programs-card__button toggle" href="#">
                   <span class="visually-hidden">Подробнее</span>
                   <svg>
-                    <use href="/__spritemap#sprite-user"></use>
+                    <use href="/__spritemap#sprite--arrow-button-rigth"></use>
                   </svg>
                 </a>
               </div>
@@ -287,10 +287,10 @@
               <div class="programs-card__wrapper">
                 <h2 class="programs-card__title title">Учёба</h2>
                 <p class="programs-card__text">Получите образование и измените своё будущее.</p>
-                <a class="programs-card__button button" href="#">
+                <a class="programs-card__button toggle" href="#">
                   <span class="visually-hidden">Подробнее</span>
                   <svg>
-                    <use href="/__spritemap#sprite-user"></use>
+                    <use href="/__spritemap#sprite--arrow-button-rigth"></use>
                   </svg>
                 </a>
               </div>
@@ -301,12 +301,16 @@
               </picture>
             </li>
           </ol>
-          <a class="programs__button button" href="#">
-            <span>все программы</span>
-            <svg>
-              <use href="/__spritemap#sprite-user"></use>
-            </svg>
-          </a>
+          <div class="programs__wrapper--button"></div>
+            <a class="programs__button button" href="#">
+              <span class="programs__button--description button-description">все программы</span>
+              <div class="programs__arrow button-svg-wrapper">
+                <svg>
+                  <use href="/__spritemap#sprite-arrow-button-rigth"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
       <section class="grant">
