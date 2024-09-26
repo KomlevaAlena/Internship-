@@ -12,7 +12,7 @@ import {initAccordions} from './modules/accordion/init-accordion';
 // import {sliderReviews} from './modules/slider';
 // import {sliderAdvantages} from './modules/slider';
 // import {sliderGallery} from './modules/slider';
-// import {mobileMenu} from './modules/main-menu';
+import {mainMenu} from './modules/main-menu';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    // mobileMenu();
+    mainMenu();
     initAccordions();
     sliderHero.init();
     // sliderTours.init();

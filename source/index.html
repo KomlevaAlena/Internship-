@@ -31,17 +31,20 @@
                 <img src="img/logotype-Internship-icon.webp" srcset="img/logotype-Internship-icon-2x.webp" width="30" height="30" alt="Мы на карте">
               </picture>
             </div>
-            <div class="main-nav__menu">
+            <div class="main-nav__close-menu main-nav__close-menu--nojs close-menu">
+              <h2 class="close-menu__title">меню</h2>
+              <button class="close-menu__toggle toggle main-nav__toggle--open" type="button">
+                <span class="visually-hidden">Открыть меню.</span>
+                <svg>
+                  <use href="/__spritemap#sprite-burger"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="main-nav__menu main-nav__menu--disabled">
               <ul class="main-nav__list main-list__nojs accordion" data-accordion="parent" data-single>
                 <li class="main-nav__item">
                   <h2 class="main-nav__title">меню</h2>
-                  <button class="main-nav__toggle toggle button main-nav__toggle--open" type="button">
-                    <span class="visually-hidden">Открыть меню.</span>
-                    <svg>
-                      <use href="/__spritemap#sprite-burger"></use>
-                    </svg>
-                  </button>
-                  <button class="main-nav__toggle toggle button main-nav__toggle--close" type="button">
+                  <button class="main-nav__toggle toggle main-nav__toggle--close" type="button">
                     <span class="visually-hidden">Закрыть меню.</span>
                     <svg>
                       <use href="/__spritemap#sprite-cross"></use>
@@ -115,14 +118,16 @@
                 <div class="hero-card__wrapper">
                   <h2 class="hero-card__title title">Программы стажировок в крупнейших компаниях мира</h2>
                   <p class="hero-card__text">Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.</p>
-                  <a class="hero-card__button button" href="#">
-                    <span class="hero-card__button--description button-description">Подробнее</span>
-                    <div class="hero-card__arrow button-svg-wrapper">
-                      <svg>
-                        <use href="/__spritemap#sprite-arrow-button-rigth"></use>
-                      </svg>
-                    </div>
-                  </a>
+                  <div class="hero-card__wrapper--button">
+                    <a class="hero-card__button button" href="#">
+                      <span class="hero-card__button--description button-description">Подробнее</span>
+                      <div class="hero-card__arrow button-svg-wrapper">
+                        <svg>
+                          <use href="/__spritemap#sprite-arrow-button-rigth"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </div>
                 <picture>
                   <source media="(min-width: 1440px)" srcset="img/hero-program-1x.webp 1x, img/hero-program-2x.webp 2x" width="1440" height="800" type="image/webp">
@@ -134,14 +139,16 @@
                 <div class="hero-card__wrapper">
                   <h2 class="hero-card__title title">Волонтёрские программы – внесите свой вклад в общество</h2>
                   <p class="hero-card__text">Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.</p>
-                  <a class="hero-card__button button" href="#">
-                    <span class="hero-card__button--description button-description">Подробнее</span>
-                    <div class="hero-card__arrow button-svg-wrapper">
-                      <svg>
-                        <use href="/__spritemap#sprite-arrow-button-rigth"></use>
-                      </svg>
-                    </div>
-                  </a>
+                  <div class="hero-card__wrapper--button">
+                    <a class="hero-card__button button" href="#">
+                      <span class="hero-card__button--description button-description">Подробнее</span>
+                      <div class="hero-card__arrow button-svg-wrapper">
+                        <svg>
+                          <use href="/__spritemap#sprite-arrow-button-rigth"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </div>
                 <picture>
                   <source media="(min-width: 1440px)" srcset="img/hero-volunteer-1x.webp 1x, img/hero-volunteer-2x.webp 2x" width="1440" height="800" type="image/webp">
@@ -153,14 +160,16 @@
                 <div class="hero-card__wrapper">
                   <h2 class="hero-card__title title">Глобальный профессиональный опыт обучения за рубежом</h2>
                   <p class="hero-card__text">Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!</p>
-                  <a class="hero-card__button button" href="#">
-                    <span class="hero-card__button--description button-description">Подробнее</span>
-                    <div class="hero-card__arrow button-svg-wrapper">
-                      <svg>
-                        <use href="/__spritemap#sprite-arrow-button-rigth"></use>
-                      </svg>
-                    </div>
-                  </a>
+                  <div class="hero-card__wrapper--button">
+                    <a class="hero-card__button button" href="#">
+                      <span class="hero-card__button--description button-description">Подробнее</span>
+                      <div class="hero-card__arrow button-svg-wrapper">
+                        <svg>
+                          <use href="/__spritemap#sprite-arrow-button-rigth"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </div>
                 <picture>
                   <source media="(min-width: 1440px)" srcset="img/hero-global-1x.webp 1x, img/hero-global-2x.webp 2x" width="1440" height="800" type="image/webp">

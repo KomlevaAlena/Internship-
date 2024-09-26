@@ -38,3 +38,11 @@
   margin: 0;
   width: 239px;
 }
+
+.hero-card__wrapper--button {
+  display: block;
+  width: max-content;
+  padding: 10px 15px;
+  background-color: $color-default-white;
+  border-radius: 0 0 15px 15px;
+}

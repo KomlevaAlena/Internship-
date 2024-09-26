@@ -1,0 +1,49 @@
+.close-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 30px;
+  margin-bottom: 3px;
+  border: 1px solid $color-blue;
+  width: 136px;
+  margin: 0 0 0 auto;
+  padding: 0;
+  color: $color-blue;
+  background-color: $color-default-white;
+}
+
+.close-menu__title {
+  display: block;
+  width: max-content;
+  margin: 20px auto 20px 20px;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: start;
+  font-family: $font-manrope;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.15px;
+}
+
+.close-menu__toggle {
+  color: $color-default-white;
+  background-color: $color-blue;
+  position: relative;
+  margin: 3px 3px 3px 3px;
+
+  svg {
+    display: block;
+    position: absolute;
+    content: "";
+    color: currentColor;
+    width: 22px;
+    height: 12px;
+    top: 16px;
+    left: 12px;
+  }
+}
+//для открытого меню
+.close-menu--disabled {
+  display: none;
+}
