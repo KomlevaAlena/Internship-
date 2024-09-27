@@ -117,7 +117,7 @@
   padding: 0;
   border: 1px solid $color-blue;
   border-radius: 30px;
-  background-color: $color-default-white;
+  background-color: transparent;
   color: $color-blue;
   cursor: pointer;
   user-select: none;
@@ -220,5 +220,74 @@
         transform: rotate(-45deg);
       }
     }
+  }
+}
+
+.toggle-blue {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  color: $color-default-white;
+  background-color: $color-blue;
+  cursor: pointer;
+  user-select: none;
+
+  svg {
+    display: block;
+    position: absolute;
+    content: "";
+    color: currentColor;
+    width: 10px;
+    height: 10px;
+    top: 11px;
+    left: 11px;
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    background-color: $color-default-white;
+    color: $color-blue;
+    outline: none;
+    border: 1px solid transparent;
+
+    svg {
+      transform: rotate(0deg);
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-default-white;
+    background-color: $color-blue;
+    outline: none;
+    border: 1px solid transparent;
+
+    svg {
+      transform: rotate(0deg);
+    }
+  }
+
+  &:active {
+    background-color: $color-default-white;
+    color: $color-blue;
+    outline: none;
+    border: 1px solid transparent;
+
+    svg {
+      transform: rotate(0deg);
+      opacity: 0.7;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: $color-disabled;
+    outline: none;
+    border: 1px solid transparent;
   }
 }

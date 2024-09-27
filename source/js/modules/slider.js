@@ -41,29 +41,29 @@ export const sliderHero = new Swiper('.hero__wrapper', {
   },
 });
 
-// export const sliderTours = new Swiper('.tours__wrapper', {
-//   direction: 'horizontal',
-//   loop: false,
-//   navigation: {
-//     nextEl: '.tours__button--prev',
-//     prevEl: '.tours__button--next',
-//   },
-//   modules: [Navigation, Pagination],
-//   breakpoints: {
-//     320: {
-//       slidesPerView: 1,
-//       spaceBetween: 0,
-//     },
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 18,
-//     },
-//     1440: {
-//       slidesPerView: 3,
-//       spaceBetween: 30,
-//     },
-//   },
-// });
+export const sliderPrograms = new Swiper('.programs__slider-wrapper', {
+  direction: 'horizontal',
+  loop: false,
+  navigation: {
+    nextEl: '.programs__button--next',
+    prevEl: '.programs__button--prev',
+  },
+  modules: [Navigation, Pagination],
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 18,
+    },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
 
 // export const sliderTraining = new Swiper('.training__slider--wrapper', {
 //   direction: 'horizontal',

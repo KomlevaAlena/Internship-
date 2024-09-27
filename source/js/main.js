@@ -7,7 +7,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {sliderHero} from './modules/slider';
 import {initAccordions} from './modules/accordion/init-accordion';
-// import {sliderTours} from './modules/slider';
+import {sliderPrograms} from './modules/slider';
 // import {sliderTraining} from './modules/slider';
 // import {sliderReviews} from './modules/slider';
 // import {sliderAdvantages} from './modules/slider';
@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     mainMenu();
     initAccordions();
     sliderHero.init();
-    // sliderTours.init();
+    sliderPrograms.init();
     // sliderTraining.init();
     // sliderReviews.init();
     // sliderAdvantages();
