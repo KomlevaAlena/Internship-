@@ -1,0 +1,42 @@
+.grant {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: $color-blue;
+  color: $color-default-white;
+}
+
+.grant__wrapper {
+  width: 320px;
+
+  @media (min-width: $vp-768) {
+    width: 768px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1440px;
+  }
+
+  picture {
+    display: block;
+    width: 290px;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+  }
+}
+
+.grant-description__title {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 0 15px 0;
+  color: $color-default-white;
+}
+
+.grant-description__text {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 0 15px 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-default-white;
+}
