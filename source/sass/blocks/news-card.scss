@@ -1,0 +1,66 @@
+.news-card {
+  display: block;
+  position: relative;
+}
+
+.news-card__wrapper {
+  position: absolute;
+  content: "";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+  left: 0;
+  bottom: 0;
+}
+
+.news-card__date {
+  width: max-content;
+  display: block;
+  padding: 12px 12px 6px 0;
+  margin: 0;
+  color: $color-blue;
+  background-color: $color-default-white;
+  border-radius: 0 15px 0 0;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.news-card__title {
+  display: block;
+  color: $color-blue;
+  background-color: $color-default-white;
+  border-radius: 0 15px 0 0;
+  font-family: $font-manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+  padding: 10px 18px 6px 0;
+  width: 182px;
+}
+
+.news-card__text {
+  display: block;
+  color: $color-main;
+  background-color: $color-default-white;
+  font-family: $font-manrope;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  padding: 0 18px 0 0;
+  margin: 0;
+  width: 213px;
+}
+
+.news-card__button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: max-content;
+  padding: 12px 10px 10px 0;
+  background-color: $color-default-white;
+  border-radius: 0 15px 0 0;
+}

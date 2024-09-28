@@ -1,0 +1,35 @@
+.news {
+  width: 320;
+  margin: 0 auto;
+  padding: 50px 0 50px;
+  background-color: $color-default-white;
+}
+
+.news__wrapper {
+  width: 320px;
+}
+
+.news__title {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 0 15px 0;
+  text-align: center;
+}
+
+.news__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 12px;
+}
+
+.news__button {
+  width: max-content;
+  padding: 16px 12px;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
