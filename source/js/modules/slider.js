@@ -135,30 +135,30 @@ export const sliderNewsButtons = new Swiper('.news__wrapper--menu', {
 },
 );
 
-// export const sliderReviews = new Swiper('.reviews__wrapper', {
-//   direction: 'horizontal',
-//   loop: false,
-//   navigation: {
-//     nextEl: '.reviews__button--prev',
-//     prevEl: '.reviews__button--next',
-//   },
-//   modules: [Navigation, Pagination],
-//   breakpoints: {
-//     320: {
-//       slidesPerView: 1,
-//       spaceBetween: 0,
-//     },
-//     768: {
-//       slidesPerView:1.341,
-//       centeredSlides: true,
-//       spaceBetween: 30,
-//     },
-//     1440: {
-//       slidesPerView: 1.756,
-//       spaceBetween: 120,
-//     },
-//   },
-// });
+export const sliderReviews = new Swiper('.reviews__slider', {
+  direction: 'horizontal',
+  loop: false,
+  mousewheel: true,
+  navigation: {
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
+  },
+  modules: [Navigation, Pagination],
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+    },
+    1440: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+    },
+  },
+});
 
 // export const sliderAdvantages = function sliderAdvantages() {
 //   const swiperDom = document.querySelector('.advantages__wrapper');
