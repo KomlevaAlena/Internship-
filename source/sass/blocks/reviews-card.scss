@@ -16,7 +16,7 @@
   flex-direction: row;
   width: 256px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 15px 0;
 
   picture {
     display: block;
@@ -39,4 +39,26 @@
   line-height: 16px;
   font-weight: 400;
   text-align: start;
+}
+
+.reviews-card__description {
+  display: block;
+  width: 256px;
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: start;
+  color: $color-blue;
+}
+
+.reviews-card__text {
+  display: block;
+  width: 256px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: start;
+  color: $color-main;
 }

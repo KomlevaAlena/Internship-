@@ -1,0 +1,49 @@
+.reviews-table {
+  display: block;
+  margin: 0 auto;
+  padding: 0 0 25px 0;
+  width: max-content;
+}
+
+.reviews-table__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: row;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0;
+  gap: 20px;
+}
+
+.reviews-table__name {
+  width: 108px;
+  display: block;
+  margin: 0;
+  padding: 0 0 8px 0;
+  font-size: 12px;
+  line-height: 12px;
+  color: $color-blue;
+  text-transform: uppercase;
+}
+
+.reviews-table__description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: row;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0;
+  gap: 20px;
+}
+
+.reviews-table__text {
+  width: 108px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 14px;
+  color: $color-main;
+}
