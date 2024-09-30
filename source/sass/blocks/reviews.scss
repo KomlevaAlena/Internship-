@@ -1,0 +1,146 @@
+.reviews {
+  width: 320;
+  margin: 0 auto;
+  padding: 50px 0 50px;
+  background-color: $color-default-white;
+
+  .container {
+    width: 290px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.reviews__wrapper--title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 0 30px 0;
+  background-color: transparent;
+}
+
+.reviews__wrapper--button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  width: max-content;
+  background-color: transparent;
+  color: $color-blue;
+}
+
+.reviews__button--next {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: transparent;
+
+  svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  &:hover {
+    border: none;
+    outline: none;
+    svg {
+      opacity: 0.7;
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    background-color: $color-default-white;
+    color: $color-blue;
+    border: none;
+    outline: none;
+    svg {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    background-color: $color-default-white;
+    color: $color-blue;
+    border: none;
+    outline: none;
+    svg {
+      opacity: 0.7;
+    }
+  }
+
+  &:disabled {
+    background-color: transparent;
+    color: $color-disabled;
+    border: none;
+    outline: none;
+    svg {
+      opacity: 1;
+    }
+  }
+}
+
+.reviews__button--prev {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: transparent;
+
+  svg {
+    transform: rotate(180deg);
+    width: 10px;
+    height: 10px;
+  }
+
+  &:hover {
+    border: none;
+    outline: none;
+    svg {
+      opacity: 0.7;
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    background-color: $color-default-white;
+    color: $color-blue;
+    border: none;
+    outline: none;
+    svg {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    background-color: $color-default-white;
+    color: $color-blue;
+    border: none;
+    outline: none;
+    svg {
+      opacity: 0.7;
+    }
+  }
+
+  &:disabled {
+    background-color: transparent;
+    color: $color-disabled;
+    border: none;
+    outline: none;
+    svg {
+      opacity: 1;
+    }
+  }
+}
+
+.programs__list.swiper-wrapper {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 0 30px 0;
+}
+
+.reviews-pagination {
+  display: none;
+}

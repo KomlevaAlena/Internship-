@@ -1,0 +1,30 @@
+.faq {
+  width: 320;
+  margin: 0 auto;
+  padding: 50px 0 50px;
+  background-color: $color-default-white;
+
+  .container {
+    width: 290px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.faq__title {
+  width: max-content;
+  margin: 0 auto;
+  padding: 0 0 15px 0;
+  text-align: center;
+}
+
+.faq__accordion-list {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+  gap: 10px;
+}

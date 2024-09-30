@@ -1,6 +1,7 @@
 import Swiper from 'swiper';
-import {Autoplay, Navigation, Pagination} from 'swiper/modules';
+import {Autoplay, Navigation, Pagination, Grid} from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/scss/grid';
 
 export const sliderHero = new Swiper('.hero__wrapper', {
   direction: 'horizontal',
@@ -80,13 +81,14 @@ export const sliderNews = new Swiper('.news__slider-wrapper', {
       return '<span class="' + className + '">' + (index + 1) + "</span>";
     },
   },
-  modules: [Navigation, Pagination],
+  modules: [Navigation, Pagination, Grid],
   breakpoints: {
     320: {
       slidesPerView: 1,
       spaceBetween: 0,
       grid: {
         rows: 2,
+        fill: 'row',
       },
     },
     768: {
@@ -94,6 +96,7 @@ export const sliderNews = new Swiper('.news__slider-wrapper', {
       spaceBetween: 18,
       grid: {
         rows: 2,
+        fill: 'row',
       },
     },
     1440: {
@@ -101,6 +104,7 @@ export const sliderNews = new Swiper('.news__slider-wrapper', {
       spaceBetween: 30,
       grid: {
         rows: 1,
+        fill: 'row',
       },
     },
   },
