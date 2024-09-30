@@ -65,29 +65,71 @@ export const sliderPrograms = new Swiper('.programs__slider-wrapper', {
   },
 });
 
-// export const sliderTraining = new Swiper('.training__slider--wrapper', {
-//   direction: 'horizontal',
-//   loop: false,
-//   navigation: {
-//     nextEl: '.training__button--prev',
-//     prevEl: '.training__button--next',
-//   },
-//   modules: [Navigation, Pagination],
-//   breakpoints: {
-//     320: {
-//       slidesPerView: 1,
-//       spaceBetween: 0,
-//     },
-//     768: {
-//       slidesPerView: 3,
-//       spaceBetween: 20,
-//     },
-//     1440: {
-//       slidesPerView: 4,
-//       spaceBetween: 20,
-//     },
-//   },
-// });
+export const sliderNews = new Swiper('.news__slider-wrapper', {
+  direction: 'horizontal',
+  loop: false,
+  loopAddBlankSlides: true,
+  navigation: {
+    nextEl: '.news__button--next',
+    prevEl: '.news__button--prev',
+  },
+  pagination: {
+    el: '.news-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+  modules: [Navigation, Pagination],
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      grid: {
+        rows: 2,
+      },
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 18,
+      grid: {
+        rows: 2,
+      },
+    },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      grid: {
+        rows: 1,
+      },
+    },
+  },
+});
+
+export const sliderNewsButtons = new Swiper('.news__wrapper--menu', {
+  direction: 'horizontal',
+  loop: false,
+  mousewheel: true,
+  modules: [Navigation, Pagination],
+  breakpoints: {
+    320: {
+      slidesPerView: 'auto',
+      spaceBetween: 12,
+      centeredSlides: false,
+    },
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 18,
+      centeredSlides: false,
+    },
+    1440: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      centeredSlides: false,
+    },
+  },
+},
+);
 
 // export const sliderReviews = new Swiper('.reviews__wrapper', {
 //   direction: 'horizontal',
