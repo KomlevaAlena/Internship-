@@ -761,10 +761,11 @@
       <footer class="footer" data-test="footer">
         <div class="footer__container container">
           <div class="footer__logo">
-            <span class="visually-hidden">Internship: Обучение за рубежом.</span>
-            <svg role="img"  viewBox="0 0 106 19" width="106" height="19" focusable="false">
-              <use href="/__spritemap#sprite-supergym-footer-desk"></use>
-            </svg>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logotype-Internship-icon.webp 1x, img/logotype-Internship-icon-2x.webp 2x" width="30" height="30" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/logotype-Internship-icon.webp 1x, img/logotype-Internship-icon-2x.webp 2x" width="30" height="30" type="image/webp">
+              <img src="img/logotype-Internship-icon.webp" srcset="img/logotype-Internship-icon-2x.webp" width="30" height="30" alt="Мы на карте">
+            </picture>
           </div>
           <ul class="footer__list nav-list">
             <li class="nav-list__item">
@@ -786,9 +787,11 @@
               <a class="nav-list__link" href="#">Контакты</a>
             </li>
           </ul>
+          <a class="footer__confidential" href="#">Политика конфиденциальности</a>
+          <p class="footer__copyright">Стажировка © 2023 Все права защищены</p>
           <ul class="footer__list social-list">
             <li class="social-list__item">
-              <a class="social-list__link" href="#">
+              <a class="social-list__link link-vk" href="#">
                 <span class="visually-hidden">В контакте</span>
                 <svg role="img" width="17" height="17" focusable="false">
                   <use href="/__spritemap#sprite-vk"></use>
@@ -796,15 +799,15 @@
               </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link" href="#">
+              <a class="social-list__link link-ok" href="#">
                 <span class="visually-hidden">Одноклассники</span>
                 <svg role="img" width="17" height="17" focusable="false">
-                  <use href="/__spritemap#sprite-ok"></use>
+                  <use href="/__spritemap#sprite-odnoklassniki"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link" href="#">
+              <a class="social-list__link link-reddit" href="#">
                 <span class="visually-hidden">Reddit</span>
                 <svg role="img" width="17" height="17" focusable="false">
                   <use href="/__spritemap#sprite-reddit"></use>
@@ -812,8 +815,6 @@
               </a>
             </li>
           </ul>
-          <p class="footer__copyright">Стажировка © 2023 Все права защищены</p>
-          <p class="footer__confidential">Политика конфиденциальности</p>
         </div>
       </footer>
       <div class="modal modal-form container">

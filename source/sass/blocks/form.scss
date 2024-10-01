@@ -106,6 +106,26 @@
   }
 }
 
+.form__group.is-valid {
+  position: relative;
+
+  .input-message {
+    position: absolute;
+    display: block;
+    width: 270px;
+    border: 1px solid $color-default-white;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: $color-default-white;
+    top: -10px;
+    left: 0;
+    padding: 8px 25px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+}
+
 .form-label {
   display: block;
   width: max-content;
