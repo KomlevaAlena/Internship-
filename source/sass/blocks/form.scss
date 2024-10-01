@@ -1,0 +1,327 @@
+.form {
+  width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.form__group {
+  width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 12px;
+
+  input,
+  textarea {
+    position: relative;
+    display: block;
+    width: 270px;
+    padding: 16px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    color: $color-default-white;
+    background-color: transparent;
+
+    &:before {
+      display: none;
+      position: absolute;
+      background-color: $color-default-white;
+      content:'';
+      opacity: 0.3;
+      width: 2px;
+      height: 18px;
+      top: 50%;
+      left: 0;
+    }
+
+    &:hover {
+      border: 1px solid $color-default-white;
+      outline: none;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &:focus,
+    &:focus-visible,
+    &:active {
+      border: 1px solid $color-default-white;
+      outline: none;
+
+      &:before {
+        position: absolute;
+        display: block;
+        background-color: $color-default-white;
+        content:'';
+        opacity: 0.3;
+        width: 2px;
+        height: 18px;
+        top: 50%;
+        left: 0;
+      }
+    }
+
+    &:disabled {
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      background-color: rgba(169, 175, 183, 0.3);
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.form__group.is-invalid {
+  position: relative;
+
+  input,
+  textarea {
+    border: 1px solid $color-error;
+    background-color: rgba(255, 94, 102, 0.3);
+  }
+
+  .input-message {
+    position: absolute;
+    display: block;
+    width: 270px;
+    border: 1px solid $color-error;
+    background-color: rgba(255, 94, 102, 0.3);
+    color: $color-default-white;
+    top: -10px;
+    left: 0;
+    padding: 8px 25px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+}
+
+.form-label {
+  display: block;
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 14px;
+  color: $color-default-white;
+}
+
+.form__select {
+  display: block;
+  width: 270px;
+  padding: 16px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  color: $color-default-white;
+  background-color: transparent;
+
+  &:hover {
+    border: 1px solid $color-default-white;
+    outline: none;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:active {
+    border: 1px solid $color-default-white;
+    outline: none;
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:disabled {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(169, 175, 183, 0.3);
+    outline: none;
+  }
+}
+
+.form__select__text {
+  display: block;
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-main;
+
+  &:hover {
+    background-color: $color-default-white;
+    color: $color-blue;
+    border: none;
+    outline: none;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:active {
+    background-color: $color-blue;
+    color: $color-default-white;
+    border: none;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $color-default-white;
+    color: $color-disabled;
+    border: none;
+    outline: none;
+  }
+}
+
+.form__checkbox {
+  position: relative;
+  display: block;
+  width: 270px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.checkbox__control {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  width: 230px;
+  margin: 0;
+  padding: 0;
+}
+
+.checkbox__label {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 230px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.checkbox__input {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  order: 1;
+  margin: 0;
+  padding: 0;
+  top: 32%;
+  left: 9px;
+}
+
+.checkbox__mark {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 32%;
+  left: 9px;
+  border: 1px solid rgba(255, 255, 255,0.7);
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.control__input:hover + .control__mark,
+.control__input:focus + .control__mark,
+.control__input:active + .control__mark {
+  border: 1px solid $color-default-white;
+  outline: none;
+}
+
+.control__input:active + .control__mark {
+  background-color: $color-disabled;
+  border: 1px solid $color-default-white;
+  outline: none;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-color: $color-default-white;
+
+  &:before {
+    position: absolute;
+    top: 10px;
+    left: 3px;
+    width: 6px;
+    height: 2px;
+    background-color: $color-blue;
+    content: "";
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    width: 11px;
+    height: 2px;
+    background-color: $color-blue;
+    content: "";
+    transform: rotate(-45deg);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px solid $color-default-white;
+    outline: none;
+    background-color: $color-blue;
+
+    &:before {
+      background-color: $color-default-white;
+    }
+
+    &:after {
+      background-color: $color-default-white;
+    }
+  }
+
+  &:disabled {
+    border: 1px solid $color-disabled;
+    outline: none;
+    background-color: $color-disabled;
+
+    &:before {
+      background-color: $color-default-white;
+    }
+
+    &:after {
+      background-color: $color-default-white;
+    }
+  }
+}
+
+.form__button {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid $color-default-white;
+}
+
+.form__button--description {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  color: $color-default-white;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.form__arrow {
+  background-color: $color-default-white;
+  color: $color-blue;
+}
