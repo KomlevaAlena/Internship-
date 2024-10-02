@@ -10,6 +10,8 @@ import {initAccordions} from './modules/accordion/init-accordion';
 import {sliderPrograms} from './modules/slider';
 import {sliderNews} from './modules/slider';
 import {sliderNewsButtons} from './modules/slider';
+//import {initModals} from './modules/modals/init-modals';
+//import {CustomSelect} from './modules/select/custom-select';
 // import {sliderAdvantages} from './modules/slider';
 // import {sliderGallery} from './modules/slider';
 import {mainMenu} from './modules/main-menu';
@@ -24,6 +26,9 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     mainMenu();
     initAccordions();
+    //initModals();
+    // const select = new CustomSelect();
+    // select.init();
     sliderHero.init();
     sliderPrograms.init();
     sliderNews.init();

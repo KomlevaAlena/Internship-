@@ -1,6 +1,8 @@
 // Vendor
 @import "vendor/normalize";
 @import "vendor/data-accordion";
+//@import "vendor/modal";
+@import "vendor/custom-select";
 
 // Global
 @import "global/fonts/fonts";
@@ -45,4 +47,5 @@
 @import "blocks/footer-nav-list";
 @import "blocks/footer-social-list";
 @import "blocks/modal";
+@import "blocks/checkbox";
 
