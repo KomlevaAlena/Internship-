@@ -7,6 +7,11 @@
   border: 1px solid $color-default-white;
   border-radius: 16px;
   padding: 16px 21px;
+
+  @media (min-width: $vp-768) {
+    min-width: 273px;
+    align-items: start;
+  }
 }
 
 .advantages-card__title {
@@ -19,6 +24,14 @@
   text-transform: uppercase;
   text-align: start;
   color: $color-default-white;
+
+  @media (min-width: $vp-768) {
+    width: 174px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+  }
 }
 
 .advantages-card__description {
@@ -29,6 +42,13 @@
   font-family: $font-manrope-light;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $vp-768) {
+    width: 211px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .advantages-card__svg {
