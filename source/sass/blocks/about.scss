@@ -16,6 +16,14 @@
   padding: 0 0 15px 0;
   width: 290px;
   margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    padding: 0 0 30px 45px;
+    margin: 0;
+    width: 638px;
+    font-size: 34px;
+    line-height: 50px;
+  }
 }
 
 h3.about__title {
@@ -24,6 +32,14 @@ h3.about__title {
   padding: 0 0 20px 0;
   font-size: 18px;
   line-height: 22px;
+
+  @media (min-width: $vp-768) {
+    padding: 0 0 30px 45px;
+    margin: 0;
+    width: 498px;
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .about__text {
@@ -33,6 +49,14 @@ h3.about__title {
   padding: 0 0 40px 0;
   font-size: 16px;
   line-height: 22px;
+
+  @media (min-width: $vp-768) {
+    padding: 0 0 40px 45px;
+    margin: 0;
+    width: 683px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .about__description {
@@ -42,11 +66,19 @@ h3.about__title {
   padding: 0 0 30px 0;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $vp-768) {
+    padding: 0 0 40px 45px;
+    margin: 0;
+    width: 543px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .about__wrapper--button {
   display: block;
-  width: 290px;
-  margin: 0 auto;
-  padding: 0 0 40px 0;
+  width: max-content;
+  margin: 0;
+  padding: 0 0 40px 45px;
 }

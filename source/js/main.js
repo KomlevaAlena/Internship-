@@ -15,6 +15,7 @@ import {sliderNewsButtons} from './modules/slider';
 // import {sliderAdvantages} from './modules/slider';
 // import {sliderGallery} from './modules/slider';
 import {mainMenu} from './modules/main-menu';
+import {modalForm} from './modules/modal-form';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     mainMenu();
+    modalForm();
     initAccordions();
     //initModals();
     // const select = new CustomSelect();

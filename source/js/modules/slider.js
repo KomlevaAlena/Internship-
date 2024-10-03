@@ -10,11 +10,11 @@ export const sliderHero = new Swiper('.hero__wrapper', {
     delay: 3000,
     disableOnInteraction: false,
   },
+  modules: [Autoplay, Navigation, Pagination],
   pagination: {
     el: '.hero-pagination',
     clickable: true,
   },
-  modules: [Autoplay, Navigation, Pagination],
   breakpoints: {
     320: {
       slidesPerView: 1,

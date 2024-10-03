@@ -16,7 +16,7 @@
   @media (min-width: $vp-768) {
     width: 678px;
     //padding: 30px 45px;
-    top: 30px;
+    top: 31px;
     left: 45px;
   }
 
@@ -41,7 +41,15 @@
     height: 30px;
     position: absolute;
     content: '';
-    top: 15%;
+    top: 21%;
     left: 20%;
+  }
+
+  @media (min-width: $vp-768) {
+    display: block;
+
+    picture {
+      top: 21%;
+    }
   }
 }

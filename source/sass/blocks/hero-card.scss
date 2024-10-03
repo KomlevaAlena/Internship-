@@ -11,6 +11,49 @@
   flex-direction: column;
   left: 10px;
   bottom: 18px;
+
+  @media (min-width: $vp-768) {
+    left: 45px;
+    bottom: 60px;
+  }
+}
+
+.hero-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  gap: 12px;
+  color: $color-blue;
+  background-color: $color-default-white;
+  width: 80px;
+  height: 28px;
+  border-radius: 15px 15px 0 0;
+  margin: 0;
+  padding: 10px 16px;
+
+  .swiper-pagination-bullet {
+    display: block;
+    background-color: $color-default-white;
+    border: 1px solid $color-blue;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $color-blue;
+  }
+
+  @media (min-width: $vp-768) {
+    width: 100px;
+    padding: 14px 20px;
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+    }
+  }
 }
 
 .hero-card__title {
@@ -25,6 +68,25 @@
   margin: 0;
   padding: 14px 20px 15px 16px;
   width: 261px;
+
+  @media (min-width: $vp-768) {
+    width: 659px;
+    padding: 30px 69px 24px 40px;
+    font-family: $font-manrope;
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+.hero-card__text--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+
+  @media (min-width: $vp-768) {
+    flex-direction: row;
+  }
 }
 
 .hero-card__text {
@@ -39,6 +101,15 @@
   padding: 0 20px 15px 15px;
   margin: 0;
   width: 239px;
+
+  @media (min-width: $vp-768) {
+    width: 355px;
+    padding: 0 30px 35px 40px;
+    font-family: $font-manrope;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 0 0 0 15px;
+  }
 }
 
 .hero-card__wrapper--button {
@@ -47,4 +118,9 @@
   padding: 10px 15px;
   background-color: $color-default-white;
   border-radius: 0 0 15px 15px;
+
+  @media (min-width: $vp-768) {
+    padding: 0 30px 35px 40px;
+    border-radius: 0 0 15px 0;
+  }
 }
