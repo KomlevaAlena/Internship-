@@ -31,6 +31,42 @@
   margin: 0 auto;
   padding: 0 0 30px 0;
   background-color: transparent;
+
+  @media (min-width: $vp-768) {
+    width: 678px;
+  }
+}
+
+.programs-button-title {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+  }
+}
+
+.programs-button-slider {
+  display: flex;
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+}
+
+.programs-arrow-button-title {
+  display: flex;
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+}
+
+.programs-arrow-button-slider {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+  }
 }
 
 .programs__button--next {
@@ -140,4 +176,51 @@
   width: 290px;
   margin: 0 auto;
   padding: 0 0 30px 0;
+
+  @media (min-width: $vp-768) {
+    width: 723px;
+    margin: 0 0 0 45px;
+    padding: 0 0 40px 0;
+  }
+}
+
+.programs__wrapper--pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 678px;
+  margin: 0 0 0 45px;
+}
+
+.programs-pagination {
+  display: none;
+
+
+  .swiper-pagination-bullet {
+    display: block;
+    background-color: $color-blue;
+    border: none;
+    width: 187px;
+    height: 2px;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding-inline-start: 0;
+    width: 561px;
+    height: 2px;
+  }
 }

@@ -50,14 +50,18 @@ export const sliderPrograms = new Swiper('.programs__slider-wrapper', {
     prevEl: '.programs__button--prev',
   },
   modules: [Navigation, Pagination],
+  pagination: {
+    el: '.programs-pagination',
+    clickable: true,
+  },
   breakpoints: {
     320: {
       slidesPerView: 1,
       spaceBetween: 0,
     },
     768: {
-      slidesPerView: 2,
-      spaceBetween: 18,
+      slidesPerView: 'auto',
+      spaceBetween: 30,
     },
     1440: {
       slidesPerView: 3,

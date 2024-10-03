@@ -265,7 +265,17 @@
         <div class="programs__wrapper container">
           <div class="programs__wrapper--title">
             <h2 class="programs__title title">Программы</h2>
-            <div class="programs__wrapper--button">
+            <div class="programs__wrapper--button programs-button-title">
+              <a class="programs__button button" href="#">
+                <span class="programs__button--description button-description">все программы</span>
+                <div class="programs__arrow button-svg-wrapper">
+                  <svg>
+                    <use href="/__spritemap#sprite-arrow-button-rigth"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="programs__wrapper--button programs-arrow-button-title">
               <button class="slider__button slider__button--prev programs__button--prev toggle" type="button">
               <span class="visually-hidden">Предыдущий слайд</span>
               <svg>
@@ -341,7 +351,7 @@
               </li>
             </ol>
           </div>
-          <div class="programs__wrapper--button"></div>
+          <div class="programs__wrapper--button programs-button-slider">
             <a class="programs__button button" href="#">
               <span class="programs__button--description button-description">все программы</span>
               <div class="programs__arrow button-svg-wrapper">
@@ -350,6 +360,24 @@
                 </svg>
               </div>
             </a>
+          </div>
+          <div class="programs__wrapper--pagination">
+            <ol class="programs-list programs-pagination swiper-pagination">
+            </ol>
+            <div class="programs__wrapper--button programs-arrow-button-slider">
+              <button class="slider__button slider__button--prev programs__button--prev toggle" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+              <svg>
+                <use href="/__spritemap#sprite-arrow-button-rigth"></use>
+              </svg>
+              </button>
+              <button class="slider__button slider__button--next programs__button--next toggle" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
+                <svg>
+                  <use href="/__spritemap#sprite-arrow-button-rigth"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
