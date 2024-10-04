@@ -82,7 +82,7 @@ export const sliderNews = new Swiper('.news__slider-wrapper', {
     el: '.news-pagination',
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
     },
   },
   modules: [Navigation, Pagination, Grid],
@@ -97,7 +97,7 @@ export const sliderNews = new Swiper('.news__slider-wrapper', {
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 18,
+      spaceBetween: 30,
       grid: {
         rows: 2,
         fill: 'row',
@@ -126,8 +126,8 @@ export const sliderNewsButtons = new Swiper('.news__wrapper--menu', {
       centeredSlides: false,
     },
     768: {
-      slidesPerView: 5,
-      spaceBetween: 18,
+      slidesPerView: 'auto',
+      spaceBetween: 10,
       centeredSlides: false,
     },
     1440: {

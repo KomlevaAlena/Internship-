@@ -47,7 +47,7 @@ export const modalForm = function modalDescription() {
   document.addEventListener('mouseup', (e) => {
     if (!modalWrapper.contains(e.target)) {
       modalWindow.classList.remove('modal-open');
-      tagBody.classList.remove('hidden');
+      //tagBody.classList.remove('hidden');
     }
   });
 };
