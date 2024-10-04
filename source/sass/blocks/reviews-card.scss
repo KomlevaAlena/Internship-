@@ -6,6 +6,13 @@
   color: $color-blue;
   border: 2px solid $color-blue;
   border-radius: 16px;
+
+  @media (min-width: $vp-768) {
+    width: 560px;
+    display: grid;
+    grid-template-columns: 162px auto;
+    grid-template-rows: auto;
+  }
 }
 
 .reviews-card__name {
@@ -28,6 +35,15 @@
     overflow: hidden;
     background-color: $color-blue;
   }
+
+  @media (min-width: $vp-768) {
+    width: 162px;
+
+    picture {
+      width: 90px;
+      height: 90px;
+    }
+  }
 }
 
 .reviews-card__title {
@@ -39,8 +55,18 @@
   line-height: 16px;
   font-weight: 400;
   text-align: start;
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 0 0 15px;
+  }
 }
 
+
+.reviews-card__content {
+ grid-column: 1 / -1;
+}
 .reviews-card__description {
   display: block;
   width: 256px;
@@ -50,6 +76,13 @@
   line-height: 18px;
   text-align: start;
   color: $color-blue;
+
+  @media (min-width: $vp-768) {
+    width: 465px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 0 25px 0;
+  }
 }
 
 .reviews-card__text {
@@ -61,4 +94,10 @@
   line-height: 20px;
   text-align: start;
   color: $color-main;
+
+  @media (min-width: $vp-768) {
+    width: 465px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

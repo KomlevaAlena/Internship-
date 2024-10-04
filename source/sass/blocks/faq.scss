@@ -9,6 +9,12 @@
     margin: 0 auto;
     padding: 0;
   }
+
+  @media (min-width: $vp-768) {
+    .container {
+      width: 678px;
+    }
+  }
 }
 
 .faq__title {
@@ -16,6 +22,11 @@
   margin: 0 auto;
   padding: 0 0 15px 0;
   text-align: center;
+
+  @media (min-width: $vp-768) {
+    width: 678px;
+    padding: 0 0 40px 0;
+  }
 }
 
 .faq__accordion-list {
@@ -27,4 +38,9 @@
   justify-content: start;
   flex-direction: column;
   gap: 10px;
+
+  @media (min-width: $vp-768) {
+    width: 678px;
+    padding: 0 0 50px 0;
+  }
 }
