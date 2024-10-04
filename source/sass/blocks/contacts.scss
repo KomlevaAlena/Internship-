@@ -4,7 +4,12 @@
   background-color: $color-blue;
   color: $color-default-white;
   padding: 75px 0 70px 0;
+
+  @media (min-width: $vp-768) {
+    padding: 100px 0 100px 0;
+  }
 }
+
 
 .contacts__wrapper.container {
   display: flex;

@@ -7,6 +7,10 @@
   margin: 0;
   padding: 0;
   gap: 20px;
+
+  @media (min-width: $vp-768) {
+    width: 362px;
+  }
 }
 
 .form__group {
@@ -80,6 +84,15 @@
       }
     }
   }
+
+  @media (min-width: $vp-768) {
+    width: 362px;
+
+    input,
+  textarea {
+    width: 362px;
+  }
+  }
 }
 
 .form__group.is-invalid {
@@ -136,6 +149,12 @@
   font-size: 12px;
   line-height: 14px;
   color: $color-default-white;
+
+  @media (min-width: $vp-768) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
 }
 
 .form__select {
@@ -167,6 +186,10 @@
     border: 1px solid rgba(255, 255, 255, 0.7);
     background-color: rgba(169, 175, 183, 0.3);
     outline: none;
+  }
+
+  @media (min-width: $vp-768) {
+    width: 362px;
   }
 }
 
@@ -341,6 +364,11 @@
   font-size: 12px;
   line-height: 12px;
   text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .form__arrow {
