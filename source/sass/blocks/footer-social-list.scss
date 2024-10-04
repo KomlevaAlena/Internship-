@@ -7,6 +7,13 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+
+  @media (min-width: $vp-768) {
+    width: 128px;
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    margin: 0 0 0 auto;
+  }
 }
 
 .social-list__link {
@@ -22,6 +29,11 @@
     display: block;
     position: absolute;
   }
+
+  @media (min-width: $vp-768) {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .link-vk {
@@ -30,6 +42,15 @@
     left: 7px;
     width: 12px;
     height: 7px;
+  }
+
+  @media (min-width: $vp-768) {
+    svg {
+      top: 13px;
+      left: 10px;
+      width: 16px;
+      height: 9px;
+    }
   }
 }
 
@@ -40,6 +61,14 @@
     width: 7px;
     height: 12px;
   }
+  @media (min-width: $vp-768) {
+    svg {
+      top: 8px;
+      left: 13px;
+      width: 10px;
+      height: 16px;
+    }
+  }
 }
 
 .link-reddit {
@@ -48,5 +77,13 @@
     left: 7px;
     width: 11px;
     height: 12px;
+  }
+  @media (min-width: $vp-768) {
+    svg {
+      top: 8px;
+      left: 10px;
+      width: 15px;
+      height: 16px;
+    }
   }
 }
