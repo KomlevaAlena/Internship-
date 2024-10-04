@@ -7,6 +7,11 @@
   width: 290px;
   margin: 0 auto;
   padding: 0;
+
+  @media (min-width: $vp-768) {
+    width: max-content;
+    gap: 24px;
+  }
 }
 
 .contacts-card__title {
@@ -28,6 +33,12 @@
   font-family: $font-manrope;
   font-size: 14px;
   line-height: 20px;
+
+
+  @media (min-width: $vp-768) {
+    width: max-content;
+    font-size: 16px;
+  }
 }
 
 .contacts-card__tel, .contacts-card__email {
@@ -69,5 +80,9 @@
     color: $color-disabled;
     border-bottom: 1px solid transparent;
     outline: none;
+  }
+
+  @media (min-width: $vp-768) {
+    font-size: 16px;
   }
 }

@@ -148,6 +148,10 @@ export const sliderReviews = new Swiper('.reviews__slider', {
     prevEl: '.reviews__button--prev',
   },
   modules: [Navigation, Pagination],
+  pagination: {
+    el: '.reviews-pagination',
+    clickable: true,
+  },
   breakpoints: {
     320: {
       slidesPerView: 1,

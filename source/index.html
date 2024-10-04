@@ -660,55 +660,75 @@
                 </div>
               </li>
               <li class="reviews-card swiper-slide">
+                <div class="reviews-card__name">
                 <picture>
                   <source media="(max-width: 767px)" srcset="img/avatar-david-1x.webp 1x, img/avatar-david-1x.webp 2x" width="90" height="90" type="image/webp">
                   <source media="(max-width: 1365px)" srcset="img/avatar-david-1x.webp 1x, img/avatar-david-2x.webp 2x" width="90" height="90" type="image/webp">
                   <img src="img/avatar-david-1x.webp" srcset="img/avatar-david-2x.webp" width="60" height="60" alt="Давид Иванов">
                 </picture>
+                <h3 class="reviews-card__title">Давид Иванов</h3>
+                </div>
+                <table class="reviews-card__table reviews-table">
+                  <tr class="reviews-table__header">
+                    <td class="reviews-table__name">программа</td>
+                    <td class="reviews-table__name">Дата</td>
+                  </tr>
+                  <tr class="reviews-table__description">
+                    <td class="reviews-table__text">Лето 2022</td>
+                    <td class="reviews-table__text">Volunteer Chance</td>
+                  </tr>
+                </table>
                 <div class="reviews-card__content">
-                  <h3 class="reviews-card__title">Давид Иванов</h3>
-                  <table class="reviews-card__table table">
-                    <tr class="table__header">
-                      <td class="table__name">программа</td>
-                      <td class="table__name">Дата</td>
-                    </tr>
-                    <tr class="table__description">
-                      <td class="table__text">Лето 2022</td>
-                      <td class="table__text">Volunteer Chance</td>
-                    </tr>
-                  </table>
                   <p class="reviews-card__description">Благодаря опыту стажировки я узналтал много нового о себе и об окружающем мире.</p>
                   <p class="reviews-card__text">Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал эту волонтёрскую программу всем, кто ищет значимый и незабываемый опыт. Организация была на высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
                 </div>
               </li>
               <li class="reviews-card swiper-slide">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="img/orlova-1x.webp 1x, img/orlova-1x.webp 2x" width="90" height="90" type="image/webp">
-                  <source media="(max-width: 1365px)" srcset="img/orlova-1x.webp 1x, img/orlova-2x.webp 2x" width="90" height="90" type="image/webp">
-                  <img src="img/orlova-1x.webp" srcset="img/orlova-2x.webp" width="60" height="60" alt="Анна Орлова">
-                </picture>
-                <div class="reviews-card__content">
+                <div class="reviews-card__name">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="img/orlova-1x.webp 1x, img/orlova-1x.webp 2x" width="90" height="90" type="image/webp">
+                    <source media="(max-width: 1365px)" srcset="img/orlova-1x.webp 1x, img/orlova-2x.webp 2x" width="90" height="90" type="image/webp">
+                    <img src="img/orlova-1x.webp" srcset="img/orlova-2x.webp" width="60" height="60" alt="Анна Орлова">
+                  </picture>
                   <h3 class="reviews-card__title">Анна Орлова</h3>
-                  <table class="reviews-card__table table">
-                    <tr class="table__header">
-                      <td class="table__name">программа</td>
-                      <td class="table__name">Дата</td>
-                    </tr>
-                    <tr class="table__description">
-                      <td class="table__text">Лето 2022</td>
-                      <td class="table__text">Volunteer Chance</td>
-                    </tr>
-                  </table>
+                </div>
+                <table class="reviews-card__table reviews-table">
+                  <tr class="reviews-table__header">
+                    <td class="reviews-table__name">программа</td>
+                    <td class="reviews-table__name">Дата</td>
+                  </tr>
+                  <tr class="reviews-table__description">
+                    <td class="reviews-table__text">Лето 2022</td>
+                    <td class="reviews-table__text">Volunteer Chance</td>
+                  </tr>
+                </table>
+                <div class="reviews-card__content">
                   <p class="reviews-card__description">Благодаря опыту стажировки я узналтала много нового о себе и об окружающем мире.</p>
                   <p class="reviews-card__text">Я рекомендую программу «Волонтер» всем, желающим получить незабываемые впечатления. Сочетание путешествий, общения и значимой работы действительно отличает её от других программ, и я чувствую огромную благодарность за предоставленную мне возможность.</p>
                 </div>
               </li>
             </ol>
-            <ol class="reviews-list reviews-pagination swiper-pagination">
-              <li class="swiper-pagination-bullet"><span class="visually-hidden">1</span></li>
-              <li class="swiper-pagination-bullet"><span class="visually-hidden">2</span></li>
-              <li class="swiper-pagination-bullet"><span class="visually-hidden">3</span></li>
-            </ol>
+            <div class="reviews__wrapper--pagination">
+              <ol class="reviews-list reviews-pagination swiper-pagination">
+                <li class="swiper-pagination-bullet"><span class="visually-hidden">1</span></li>
+                <li class="swiper-pagination-bullet"><span class="visually-hidden">2</span></li>
+                <li class="swiper-pagination-bullet"><span class="visually-hidden">3</span></li>
+              </ol>
+              <div class="reviews__wrapper--button reviews-button-slider">
+                <button class="reviews__button reviews__button--prev toggle slider__button--prev" type="button">
+                  <span class="visually-hidden">Назад</span>
+                  <svg>
+                    <use href="/__spritemap#sprite-arrow-button-rigth"></use>
+                  </svg>
+                </button>
+                <button class="reviews__button reviews__button--next toggle slider__button--next" type="button">
+                  <span class="visually-hidden">Вперед</span>
+                  <svg>
+                    <use href="/__spritemap#sprite-arrow-button-rigth"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>

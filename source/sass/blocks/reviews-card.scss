@@ -12,6 +12,7 @@
     display: grid;
     grid-template-columns: 162px auto;
     grid-template-rows: auto;
+    align-self: stretch;
   }
 }
 
@@ -37,7 +38,7 @@
   }
 
   @media (min-width: $vp-768) {
-    width: 162px;
+    //width: 162px;
 
     picture {
       width: 90px;
