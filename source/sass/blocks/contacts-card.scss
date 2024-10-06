@@ -12,6 +12,10 @@
     width: max-content;
     gap: 24px;
   }
+
+  @media (min-width: $vp-1440) {
+    gap: 24px;
+  }
 }
 
 .contacts-card__title {
@@ -22,7 +26,12 @@
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
+  letter-spacing: 0.12px;
   text-transform: uppercase;
+
+  @media (min-width: $vp-1440) {
+    max-width: 263px;
+  }
 }
 
 .contacts-card__description {
@@ -38,6 +47,11 @@
   @media (min-width: $vp-768) {
     width: max-content;
     font-size: 16px;
+  }
+
+  @media (min-width: $vp-1440) {
+    max-width: 263px;
+    line-height: 26px;
   }
 }
 
