@@ -64,8 +64,8 @@ export const sliderPrograms = new Swiper('.programs__slider-wrapper', {
       spaceBetween: 30,
     },
     1440: {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      slidesPerView: 'auto',
+      spaceBetween: 32,
     },
   },
 });

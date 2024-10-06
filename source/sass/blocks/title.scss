@@ -13,4 +13,9 @@
     font-size: 34px;
     line-height: 50px;
   }
+
+  @media (min-width: $vp-1440) {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }
