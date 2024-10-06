@@ -15,6 +15,12 @@
       width: 768px;
     }
   }
+
+  @media (min-width: $vp-1440) {
+    .container {
+      width: 1240px;
+    }
+  }
 }
 
 .reviews__slider {
@@ -24,6 +30,10 @@
 
   @media (min-width: $vp-768) {
     width: 678px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1240px;
   }
 }
 
@@ -39,6 +49,10 @@
 
   @media (min-width: $vp-768) {
     width: 678px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1240px;
   }
 }
 
@@ -165,6 +179,10 @@
   @media (min-width: $vp-768) {
     width: 678px;
   }
+
+  @media (min-width: $vp-1440) {
+    width: 1240px;
+  }
 }
 
 .reviews-pagination {
@@ -193,6 +211,11 @@
     padding-inline-start: 0;
     width: 561px;
     height: 2px;
+    background-color: rgba(49, 109, 194, 0.5);
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1136px;
   }
 }
 
@@ -213,5 +236,9 @@
     margin: 0;
     padding: 0;
     width: 678px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1240px;
   }
 }
