@@ -155,6 +155,9 @@
     line-height: 20px;
   }
 
+  @media (min-width: $vp-1440) {
+    line-height: 18px;
+  }
 }
 
 .form__select {
@@ -225,130 +228,6 @@
     outline: none;
   }
 }
-
-// .form__checkbox {
-//   position: relative;
-//   display: block;
-//   width: 270px;
-//   margin: 0;
-//   padding: 0;
-//   border: none;
-//   outline: none;
-// }
-
-// .checkbox__control {
-//   display: flex;
-//   flex-wrap: wrap;
-//   flex-direction: row;
-//   align-items: center;
-//   justify-content: start;
-//   width: 230px;
-//   margin: 0;
-//   padding: 0;
-// }
-
-// .checkbox__label {
-//   display: block;
-//   margin: 0;
-//   padding: 0;
-//   width: 230px;
-//   font-size: 12px;
-//   line-height: 14px;
-// }
-
-// .checkbox__input {
-//   display: block;
-//   position: absolute;
-//   width: 20px;
-//   height: 20px;
-//   order: 1;
-//   margin: 0;
-//   padding: 0;
-//   top: 32%;
-//   left: 9px;
-// }
-
-// .checkbox__mark {
-//   position: absolute;
-//   display: block;
-//   width: 20px;
-//   height: 20px;
-//   top: 32%;
-//   left: 9px;
-//   border: 1px solid rgba(255, 255, 255,0.7);
-//   border-radius: 4px;
-//   background-color: transparent;
-//   cursor: pointer;
-// }
-
-// .control__input:hover + .control__mark,
-// .control__input:focus + .control__mark,
-// .control__input:active + .control__mark {
-//   border: 1px solid $color-default-white;
-//   outline: none;
-// }
-
-// .control__input:active + .control__mark {
-//   background-color: $color-disabled;
-//   border: 1px solid $color-default-white;
-//   outline: none;
-// }
-
-// .control-input[type="checkbox"]:checked + .control-mark {
-//   background-color: $color-default-white;
-
-//   &:before {
-//     position: absolute;
-//     top: 10px;
-//     left: 3px;
-//     width: 6px;
-//     height: 2px;
-//     background-color: $color-blue;
-//     content: "";
-//     transform: rotate(45deg);
-//   }
-
-//   &:after {
-//     position: absolute;
-//     top: 10px;
-//     left: 7px;
-//     width: 11px;
-//     height: 2px;
-//     background-color: $color-blue;
-//     content: "";
-//     transform: rotate(-45deg);
-//   }
-
-//   &:hover,
-//   &:focus,
-//   &:active {
-//     border: 1px solid $color-default-white;
-//     outline: none;
-//     background-color: $color-blue;
-
-//     &:before {
-//       background-color: $color-default-white;
-//     }
-
-//     &:after {
-//       background-color: $color-default-white;
-//     }
-//   }
-
-//   &:disabled {
-//     border: 1px solid $color-disabled;
-//     outline: none;
-//     background-color: $color-disabled;
-
-//     &:before {
-//       background-color: $color-default-white;
-//     }
-
-//     &:after {
-//       background-color: $color-default-white;
-//     }
-//   }
-// }
 
 .form__button {
   width: 100%;

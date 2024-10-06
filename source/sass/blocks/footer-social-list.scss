@@ -14,6 +14,13 @@
     grid-row: 2 / 4;
     margin: 0 0 0 auto;
   }
+
+  @media (min-width: $vp-1440) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    margin: auto 0 auto 385px;
+    padding: 0;
+  }
 }
 
 .social-list__link {

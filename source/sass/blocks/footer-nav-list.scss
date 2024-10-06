@@ -4,6 +4,12 @@
     grid-row: 1 / 2;
     margin: 0 0 0 auto;
   }
+
+  @media (min-width: $vp-1440) {
+    width: 603px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }
 
 .nav-list__link {
@@ -47,5 +53,8 @@
     outline: none;
   }
 
-
+  @media (min-width: $vp-1440) {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
