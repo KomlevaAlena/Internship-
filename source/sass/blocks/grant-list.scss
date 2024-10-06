@@ -9,6 +9,16 @@
   @media (min-width: $vp-768) {
     width: 678px;
   }
+
+  @media (min-width: $vp-1440) {
+    width: 493px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 30px;
+    margin: 0;
+  }
 }
 
 .grant-list__list {
@@ -31,6 +41,16 @@
     gap: 20px 28px;
     padding: 50px;
   }
+
+  @media (min-width: $vp-1440) {
+    width: 493px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .grant-list__title {
@@ -47,6 +67,12 @@
     font-size: 28px;
     line-height: 28px;
     padding: 0 0 20px 0;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 498px;
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 
@@ -70,6 +96,11 @@
     width: 305px;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 498px;
+    padding: 31px 26px;
   }
 }
 
@@ -98,5 +129,11 @@
   font-family: $font-manrope-light;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $vp-1440) {
+    width: 426px;
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
