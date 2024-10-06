@@ -74,6 +74,7 @@ export const sliderNews = new Swiper('.news__slider-wrapper', {
   direction: 'horizontal',
   loop: false,
   loopAddBlankSlides: true,
+  freeMode: true,
   navigation: {
     nextEl: '.news__button--next',
     prevEl: '.news__button--prev',
@@ -106,10 +107,6 @@ export const sliderNews = new Swiper('.news__slider-wrapper', {
     1440: {
       slidesPerView: 3,
       spaceBetween: 30,
-      grid: {
-        rows: 1,
-        fill: 'row',
-      },
     },
   },
 });
@@ -131,8 +128,8 @@ export const sliderNewsButtons = new Swiper('.news__wrapper--menu', {
       centeredSlides: false,
     },
     1440: {
-      slidesPerView: 5,
-      spaceBetween: 30,
+      slidesPerView: 'auto',
+      spaceBetween: 10,
       centeredSlides: false,
     },
   },
