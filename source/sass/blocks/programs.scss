@@ -13,7 +13,7 @@
   }
 }
 
-.programs__wrapper--button {
+.programs__wrapper-button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -23,7 +23,7 @@
   color: $color-blue;
 }
 
-.programs__wrapper--title {
+.programs__wrapper-title {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -75,7 +75,7 @@
   }
 }
 
-.programs__button--next {
+.programs__button-next {
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -126,7 +126,7 @@
   }
 }
 
-.programs__button--prev {
+.programs__button-prev {
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -195,7 +195,7 @@
   }
 }
 
-.programs__wrapper--pagination {
+.programs__wrapper-pagination {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

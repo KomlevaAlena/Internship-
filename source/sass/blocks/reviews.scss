@@ -37,7 +37,7 @@
   }
 }
 
-.reviews__wrapper--title {
+.reviews__wrapper-title {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -56,7 +56,7 @@
   }
 }
 
-.reviews__wrapper--button {
+.reviews__wrapper-button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -225,7 +225,7 @@
   }
 }
 
-.reviews__wrapper--pagination {
+.reviews__wrapper-pagination {
   display: none;
   @media (min-width: $vp-768) {
     display: flex;

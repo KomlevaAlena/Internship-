@@ -85,7 +85,7 @@
   }
 }
 
-.hero-card__text--wrapper {
+.hero-card__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -123,7 +123,7 @@
   }
 }
 
-.hero-card__wrapper--button {
+.hero-card__button {
   display: block;
   width: max-content;
   padding: 10px 15px;

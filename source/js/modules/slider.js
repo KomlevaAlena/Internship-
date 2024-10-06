@@ -46,8 +46,8 @@ export const sliderPrograms = new Swiper('.programs__slider-wrapper', {
   direction: 'horizontal',
   loop: false,
   navigation: {
-    nextEl: '.programs__button--next',
-    prevEl: '.programs__button--prev',
+    nextEl: '.programs__button-next',
+    prevEl: '.programs__button-prev',
   },
   modules: [Navigation, Pagination],
   pagination: {
@@ -76,8 +76,8 @@ export const sliderNews = new Swiper('.news__slider-wrapper', {
   loopAddBlankSlides: true,
   freeMode: true,
   navigation: {
-    nextEl: '.news__button--next',
-    prevEl: '.news__button--prev',
+    nextEl: '.news__button-next',
+    prevEl: '.news__button-prev',
   },
   pagination: {
     el: '.news-pagination',
@@ -111,7 +111,7 @@ export const sliderNews = new Swiper('.news__slider-wrapper', {
   },
 });
 
-export const sliderNewsButtons = new Swiper('.news__wrapper--menu', {
+export const sliderNewsButtons = new Swiper('.news__wrapper-menu', {
   direction: 'horizontal',
   loop: false,
   mousewheel: true,
