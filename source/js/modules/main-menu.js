@@ -1,7 +1,7 @@
 export const mainMenu = function sliderGallery() {
   const menuButtonClose = document.querySelector('.close-menu__toggle');
   const closeMenu = document.querySelector('.close-menu');
-  const menuButtonOpen = document.querySelector('.main-nav__toggle--close');
+  const menuButtonOpen = document.querySelector('.main-nav__toggle-close');
   const openMenu = document.querySelector('.main-nav__menu');
   //const tagBody = document.getElementsByTagName('body');
   //const mainList = document.querySelector('.main-nav__list');

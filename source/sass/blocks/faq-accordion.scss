@@ -121,7 +121,7 @@
     }
   }
 
-  &.disabled {
+  &:disabled {
     background-color: $color-disabled;
     outline: none;
     border: 1px solid transparent;
@@ -137,7 +137,8 @@
 }
 
 .faq__element-description {
-  padding: 20px 0 0 0;
+  padding: 20px 0 0;
+
   p {
     display: block;
     width: 256px;
@@ -205,7 +206,7 @@
         }
       }
 
-      &.disabled {
+      &:disabled {
         background-color: $color-disabled;
         outline: none;
         border: 1px solid transparent;

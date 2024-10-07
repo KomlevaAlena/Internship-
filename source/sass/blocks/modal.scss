@@ -2,6 +2,7 @@
 .modal {
   display: none;
 }
+
 .modal-open {
   position: fixed;
   top: 0;
@@ -31,7 +32,7 @@
   display: block;
   width: max-content;
   margin: 0 auto;
-  padding: 0 0 15px 0;
+  padding: 0 0 15px;
   font-size: 18px;
   line-height: 18px;
   color: $color-blue;
@@ -43,21 +44,21 @@
   width: 34px;
   height: 34px;
 
- svg {
-  position: absolute;
-  content: '';
-  width: 16px;
-  height: 16px;
-  top: 25%;
-  left: 25%;
- }
+  svg {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 25%;
+    left: 25%;
+  }
 }
 
 .modal-form__description {
   display: block;
   width: 220px;
   margin: 0 auto;
-  padding: 0 0 25px 0;
+  padding: 0 0 25px;
   font-size: 14px;
   line-height: 20px;
   color: $color-main;
@@ -113,7 +114,7 @@
       border: 1px solid $color-main;
       outline: none;
 
-      &:before {
+      &::before {
         display: none;
       }
     }
@@ -140,7 +141,8 @@
     &:disabled {
       border: 1px solid rgba(255, 255, 255, 0.7);
       background-color: rgba(169, 175, 183, 0.3);
-      &:before {
+
+      &::before {
         display: none;
       }
     }
@@ -225,5 +227,4 @@
   background-color: $color-blue;
   color: $color-default-white;
 }
-
 

@@ -6,11 +6,11 @@
   color: $color-default-white;
 
   @media (min-width: $vp-768) {
-    padding: 50px 0 50px;
+    padding: 50px 0;
   }
 
   @media (min-width: $vp-1440) {
-    padding: 120px 0 120px;
+    padding: 120px 0;
   }
 }
 
@@ -21,7 +21,7 @@
     display: block;
     width: 290px;
     margin: 0 auto;
-    padding: 0 0 30px 0;
+    padding: 0 0 30px;
   }
 
   @media (min-width: $vp-768) {
@@ -29,7 +29,7 @@
 
     picture {
       width: 678px;
-      padding: 0 0 40px 0;
+      padding: 0 0 40px;
     }
   }
 
@@ -48,7 +48,6 @@
 }
 
 .grant-description {
-
   @media (min-width: $vp-1440) {
     width: 498px;
     gap: 0;
@@ -56,21 +55,20 @@
     justify-content: start;
     flex-wrap: wrap;
     flex-direction: column;
-    flex-direction: column;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-}
+  }
 }
 
 .grant-description__title {
   width: 290px;
   margin: 0 auto;
-  padding: 0 0 15px 0;
+  padding: 0 0 15px;
   color: $color-default-white;
 
   @media (min-width: $vp-768) {
     width: 678px;
-    padding: 0 0 30px 0;
+    padding: 0 0 30px;
     font-size: 34px;
     line-height: 50px;
   }
@@ -86,7 +84,7 @@
 .grant-description__text {
   width: 290px;
   margin: 0 auto;
-  padding: 0 0 15px 0;
+  padding: 0 0 15px;
   font-size: 14px;
   line-height: 20px;
   color: $color-default-white;
@@ -94,7 +92,7 @@
   @media (min-width: $vp-768) {
     width: 498px;
     margin: 0 0 0 45px;
-    padding: 0 0 40px 0;
+    padding: 0 0 40px;
     font-size: 16px;
     line-height: 20px;
   }

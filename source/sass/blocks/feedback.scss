@@ -1,7 +1,7 @@
 .feedback {
   width: 100%;
   margin: 0 auto;
-  padding: 40px 0 40px;
+  padding: 40px 0;
 }
 
 .feedback__wrapper {
@@ -67,7 +67,7 @@
 .feedback__title {
   display: block;
   margin: 0;
-  padding: 0 0 10px 0;
+  padding: 0 0 10px;
   width: max-content;
   font-family: $font-manrope;
   font-size: 18px;
@@ -78,20 +78,20 @@
   @media (min-width: $vp-768) {
     font-size: 28px;
     line-height: 28px;
-    padding: 0 0 31px 0;
+    padding: 0 0 31px;
   }
 
   @media (min-width: $vp-1440) {
     font-size: 32px;
     line-height: 36px;
-    padding: 0 0 34px 0;
+    padding: 0 0 34px;
   }
 }
 
 .feedback__description {
   display: block;
   margin: 0;
-  padding: 0 0 20px 0;
+  padding: 0 0 20px;
   width: 270px;
   font-size: 14px;
   line-height: 20px;
@@ -101,7 +101,7 @@
     width: 346px;
     font-size: 16px;
     line-height: 20px;
-    padding: 0 0 40px 0;
+    padding: 0 0 40px;
   }
 
   @media (min-width: $vp-1440) {

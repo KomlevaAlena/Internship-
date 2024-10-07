@@ -2,6 +2,7 @@
   display: block;
   position: relative;
 }
+
 .hero-card__wrapper {
   position: absolute;
   content: "";
@@ -79,7 +80,7 @@
 
   @media (min-width: $vp-1440) {
     width: 968px;
-    padding: 40px 50px 30px 50px;
+    padding: 40px 50px 30px;
     font-size: 54px;
     line-height: 62px;
   }
@@ -100,7 +101,7 @@
   display: block;
   color: $color-main;
   background-color: $color-default-white;
-  border-radius: 0 0 15px 0;
+  border-radius: 0 0 15px;
   font-family: $font-manrope;
   font-size: 16px;
   font-weight: 400;
@@ -132,6 +133,6 @@
 
   @media (min-width: $vp-768) {
     padding: 0 30px 35px 40px;
-    border-radius: 0 0 15px 0;
+    border-radius: 0 0 15px;
   }
 }

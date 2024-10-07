@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   margin: 0 auto;
-  padding: 40px 0 40px;
+  padding: 40px 0;
 }
 
 .footer__container {
@@ -58,7 +58,7 @@
 .footer__list {
   width: 290px;
   margin: 0 auto;
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -79,7 +79,7 @@
   display: block;
   width: max-content;
   margin: 0 auto;
-  padding: 10px 0 0 0;
+  padding: 10px 0 0;
   text-align: center;
   color: $color-disabled;
   font-size: 12px;

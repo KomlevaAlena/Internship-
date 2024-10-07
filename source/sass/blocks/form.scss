@@ -36,11 +36,11 @@
     color: $color-default-white;
     background-color: transparent;
 
-    &:before {
+    &::before {
       display: none;
       position: absolute;
       background-color: $color-default-white;
-      content:'';
+      content: "";
       opacity: 0.3;
       width: 2px;
       height: 18px;
@@ -52,7 +52,7 @@
       border: 1px solid $color-default-white;
       outline: none;
 
-      &:before {
+      &::before {
         display: none;
       }
     }
@@ -63,11 +63,11 @@
       border: 1px solid $color-default-white;
       outline: none;
 
-      &:before {
+      &::before {
         position: absolute;
         display: block;
         background-color: $color-default-white;
-        content:'';
+        content: "";
         opacity: 0.3;
         width: 2px;
         height: 18px;
@@ -79,7 +79,8 @@
     &:disabled {
       border: 1px solid rgba(255, 255, 255, 0.7);
       background-color: rgba(169, 175, 183, 0.3);
-      &:before {
+
+      &::before {
         display: none;
       }
     }
@@ -89,9 +90,9 @@
     width: 362px;
 
     input,
-  textarea {
-    width: 362px;
-  }
+    textarea {
+      width: 362px;
+    }
   }
 }
 
@@ -196,7 +197,7 @@
   }
 }
 
-.form__select__text {
+.form-select__text {
   display: block;
   width: max-content;
   margin: 0;

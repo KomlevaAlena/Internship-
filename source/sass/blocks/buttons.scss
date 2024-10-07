@@ -62,6 +62,7 @@
 
   &:active {
     opacity: 1;
+
     svg {
       transform: rotate(180deg);
     }
@@ -73,6 +74,7 @@
     color: $color-disabled;
   }
 }
+
 .button-description {
   display: block;
   padding: 16px 21px 16px 15px;
@@ -179,12 +181,12 @@
 
     .button-svg-wrapper {
       background-color: $color-blue;
-      color:  $color-default-white;
+      color: $color-default-white;
       outline: none;
       border: none;
 
       svg {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
       }
     }
   }
@@ -355,7 +357,7 @@
   }
 
   &:focus,
-  &:focus-visible{
+  &:focus-visible {
     background-color: transparent;
     color: $color-default-white;
     outline: none;

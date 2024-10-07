@@ -11,7 +11,7 @@ export const modalForm = function modalDescription() {
   // Модальное окно, которое необходимо открыть
   const modalWindow = document.getElementById('modal-window');
   // Кнопка "закрыть" внутри модального окна
-  const closeModalButton = modalWindow.getElementsByClassName('modal-form__toggle--close')[0];
+  const closeModalButton = modalWindow.getElementsByClassName('modal-form__toggle-close')[0];
   // Тег body для запрета прокрутки
   const tagBody = document.getElementsByTagName('body');
   const modalWrapper = document.querySelector('.modal__wrapper');

@@ -25,7 +25,7 @@
   flex-direction: row;
   width: 256px;
   margin: 0 auto;
-  padding: 0 0 15px 0;
+  padding: 0 0 15px;
 
   picture {
     display: block;
@@ -75,14 +75,14 @@
 }
 
 .reviews-card__content {
- grid-column: 1 / -1;
+  grid-column: 1 / -1;
 }
 
 .reviews-card__description {
   display: block;
   width: 256px;
   margin: 0 auto;
-  padding: 0 0 20px 0;
+  padding: 0 0 20px;
   font-size: 16px;
   line-height: 18px;
   text-align: start;
@@ -92,7 +92,7 @@
     width: 465px;
     font-size: 20px;
     line-height: 24px;
-    padding: 0 0 25px 0;
+    padding: 0 0 25px;
   }
 
   @media (min-width: $vp-1440) {

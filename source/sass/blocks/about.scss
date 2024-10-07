@@ -28,13 +28,13 @@
 .about__wrapper {
   @media (min-width: $vp-1440) {
     display: grid;
-      grid-template-columns: auto auto;
-      grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
   }
 }
 
 .about__title {
-  padding: 0 0 15px 0;
+  padding: 0 0 15px;
   width: 290px;
   margin: 0 auto;
 
@@ -46,14 +46,14 @@
 
   @media (min-width: $vp-1440) {
     grid-column: 1 / 2;
-    padding: 0 0 30px 0;
+    padding: 0 0 30px;
   }
 }
 
 h3.about__title {
   width: 290px;
   margin: 0 auto;
-  padding: 0 0 20px 0;
+  padding: 0 0 20px;
   font-size: 18px;
   line-height: 22px;
 
@@ -68,7 +68,7 @@ h3.about__title {
   @media (min-width: $vp-1440) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    padding: 0 0 30px 0;
+    padding: 0 0 30px;
     width: 498px;
     font-size: 32px;
     line-height: 36px;
@@ -79,7 +79,7 @@ h3.about__title {
   display: block;
   width: 290px;
   margin: 0 auto;
-  padding: 0 0 40px 0;
+  padding: 0 0 40px;
   font-size: 16px;
   line-height: 22px;
 
@@ -94,7 +94,7 @@ h3.about__title {
   @media (min-width: $vp-1440) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    padding: 0 0 40px 0;
+    padding: 0 0 40px;
     margin: 0;
     width: 702px;
     font-size: 22px;
@@ -106,7 +106,7 @@ h3.about__title {
   display: block;
   width: 290px;
   margin: 0 auto;
-  padding: 0 0 30px 0;
+  padding: 0 0 30px;
   font-size: 14px;
   line-height: 20px;
 
@@ -117,10 +117,11 @@ h3.about__title {
     font-size: 16px;
     line-height: 20px;
   }
+
   @media (min-width: $vp-1440) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    padding: 0 0 40px 0;
+    padding: 0 0 40px;
     margin: 0;
     width: 498px;
     line-height: 26px;
@@ -136,6 +137,6 @@ h3.about__title {
   @media (min-width: $vp-1440) {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    padding: 0 0 40px 0;
+    padding: 0 0 40px;
   }
 }

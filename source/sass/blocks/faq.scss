@@ -1,7 +1,7 @@
 .faq {
   width: 320;
   margin: 0 auto;
-  padding: 50px 0 50px;
+  padding: 50px 0;
   background-color: $color-default-white;
 
   .container {
@@ -17,7 +17,8 @@
   }
 
   @media (min-width: $vp-1440) {
-    padding: 60px 0 60px;
+    padding: 60px 0;
+
     .container {
       width: 1240px;
     }
@@ -27,17 +28,17 @@
 .faq__title {
   width: max-content;
   margin: 0 auto;
-  padding: 0 0 15px 0;
+  padding: 0 0 15px;
   text-align: center;
 
   @media (min-width: $vp-768) {
     width: 678px;
-    padding: 0 0 40px 0;
+    padding: 0 0 40px;
   }
 
   @media (min-width: $vp-1440) {
     width: 1240px;
-    padding: 0 0 60px 0;
+    padding: 0 0 60px;
   }
 }
 
@@ -53,11 +54,11 @@
 
   @media (min-width: $vp-768) {
     width: 678px;
-    padding: 0 0 50px 0;
+    padding: 0 0 50px;
   }
 
   @media (min-width: $vp-1440) {
     width: 1240px;
-    padding: 0 0 60px 0;
+    padding: 0 0 60px;
   }
 }
