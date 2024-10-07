@@ -6,7 +6,7 @@
   max-width: 250px;
   border: 1px solid $color-default-white;
   border-radius: 16px;
-  padding: 16px 21px;
+  padding: 14px 21px 15px 21px;
 
   @media (min-width: $vp-768) {
     min-width: 273px;
@@ -26,7 +26,7 @@
 .advantages-card__title {
   width: 208px;
   margin: 0 auto;
-  padding: 0 0 15px;
+  padding: 0 0 14px;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.16px;
@@ -82,7 +82,7 @@
   background-color: $color-blue;
   color: $color-default-white;
   border-radius: 50%;
-  top: -21px;
+  top: -25px;
   left: -21px;
 
   svg {

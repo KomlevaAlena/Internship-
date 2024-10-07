@@ -12,13 +12,25 @@
   }
 }
 
+.advantages.container {
+  width: 290px;
+
+  @media (min-width: $vp-768) {
+    width: 678px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1240px;
+  }
+}
+
 .advantages__list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  padding: 20px;
+  padding: 33px 20px 20px 20px;
   background-color: $color-blue;
   color: $color-default-white;
   border-radius: 20px;
@@ -33,7 +45,7 @@
 }
 
 .advantages__item {
-  margin: 10px auto;
+  margin: 10px auto 12px;
 
   @media (min-width: $vp-768) {
     margin: 0;
