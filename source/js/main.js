@@ -1,8 +1,3 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
-
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {sliderHero} from './modules/slider';
@@ -10,10 +5,6 @@ import {initAccordions} from './modules/accordion/init-accordion';
 import {sliderPrograms} from './modules/slider';
 import {sliderNews} from './modules/slider';
 import {sliderNewsButtons} from './modules/slider';
-//import {initModals} from './modules/modals/init-modals';
-//import {CustomSelect} from './modules/select/custom-select';
-// import {sliderAdvantages} from './modules/slider';
-// import {sliderGallery} from './modules/slider';
 import {mainMenu} from './modules/main-menu';
 import {modalForm} from './modules/modal-form';
 
@@ -28,17 +19,10 @@ window.addEventListener('DOMContentLoaded', () => {
     mainMenu();
     modalForm();
     initAccordions();
-    //initModals();
-    // const select = new CustomSelect();
-    // select.init();
     sliderHero.init();
     sliderPrograms.init();
     sliderNews.init();
     sliderNewsButtons.init();
-    // sliderAdvantages();
-    // window.addEventListener('resize', sliderAdvantages);
-    // sliderGallery();
-    // window.addEventListener('resize', sliderGallery);
   });
 });
 

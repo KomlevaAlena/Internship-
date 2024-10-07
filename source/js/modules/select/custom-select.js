@@ -58,9 +58,7 @@ export class CustomSelect {
     if (multiple && insert) {
       item.classList.add('not-empty');
       buttonTextBlock.innerHTML = str;
-    } else if (multiple) {
-      return;
-    } else {
+    } else if (multiple) { /* empty */ } else {
       item.classList.add('not-empty');
       buttonTextBlock.innerHTML = activeItems[0].innerHTML;
     }
